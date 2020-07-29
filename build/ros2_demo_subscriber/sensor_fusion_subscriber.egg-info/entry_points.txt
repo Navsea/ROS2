@@ -1,3 +1,0 @@
-[console_scripts]
-demo_subscriber = sensor_fusion_subscriber.demo_subscriber:main
-

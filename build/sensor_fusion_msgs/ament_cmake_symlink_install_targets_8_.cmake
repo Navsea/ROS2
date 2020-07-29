@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so" "TARGETS" "sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs")

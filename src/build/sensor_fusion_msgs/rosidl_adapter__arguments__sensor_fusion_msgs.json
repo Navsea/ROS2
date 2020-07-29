@@ -1,6 +1,0 @@
-{
-  "package_name": "sensor_fusion_msgs",
-  "non_idl_tuples": [
-    "/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs:msg/Vinerows.msg"
-  ]
-}

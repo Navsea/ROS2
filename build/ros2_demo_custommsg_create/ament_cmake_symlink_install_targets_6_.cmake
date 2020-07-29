@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create/libnew_msg__rosidl_typesupport_fastrtps_cpp.so" "TARGETS" "new_msg__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

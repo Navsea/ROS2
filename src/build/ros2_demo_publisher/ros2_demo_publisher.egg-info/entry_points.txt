@@ -1,3 +1,0 @@
-[console_scripts]
-demo_publisher = ros2_demo_publisher.demo_publisher:main
-

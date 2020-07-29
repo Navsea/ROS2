@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create/rosidl_generator_py/ros2_demo_custommsg_create/libnew_msg__python.so" "TARGETS" "new_msg__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

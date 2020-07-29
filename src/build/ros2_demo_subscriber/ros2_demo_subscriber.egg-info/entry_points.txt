@@ -1,3 +1,0 @@
-[console_scripts]
-demo_subscriber = ros2_demo_subscriber.demo_subscriber:main
-

@@ -309,4 +309,132 @@ endfunction()
 message(STATUS "Execute custom install script")
 
 # begin of custom install code
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/opt/ros/eloquent/lib/python3.6/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/opt/ros/eloquent/lib/python3.6/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_fastrtps_c/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_fastrtps_c/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN_EXCLUDE" "*.cpp")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_c/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_c/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.h")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_generator_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_fastrtps_cpp/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_fastrtps_cpp/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN_EXCLUDE" "*.cpp")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_cpp/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_cpp/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.hpp")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_introspection_c/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_introspection_c/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.h")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_introspection_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_introspection_cpp/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_typesupport_introspection_cpp/sensor_fusion_msgs/" "DESTINATION" "include/sensor_fusion_msgs" "PATTERN" "*.hpp")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_introspection_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_py/sensor_fusion_msgs/__init__.py" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_py/sensor_fusion_msgs/__init__.py" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs")
+
+# install(DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_py/sensor_fusion_msgs/msg/" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs/msg" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" DIRECTORY "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_py/sensor_fusion_msgs/msg/" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs/msg" "PATTERN" "*.py")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.6/site-packages/sensor_fusion_msgs")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_8_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "sensor_fusion_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_symlink_install_targets_9_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_adapter/sensor_fusion_msgs/msg/Vinerows.idl" "DESTINATION" "share/sensor_fusion_msgs/msg")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_adapter/sensor_fusion_msgs/msg/Vinerows.idl" "DESTINATION" "share/sensor_fusion_msgs/msg")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs/msg/Vinerows.msg" "DESTINATION" "share/sensor_fusion_msgs/msg")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs/msg/Vinerows.msg" "DESTINATION" "share/sensor_fusion_msgs/msg")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/eloquent/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/opt/ros/eloquent/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/opt/ros/eloquent/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/opt/ros/eloquent/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/sensor_fusion_msgs/environment")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/sensor_fusion_msgs")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/sensor_fusion_msgs")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/sensor_fusion_msgs")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/sensor_fusion_msgs")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/sensor_fusion_msgs")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/packages/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_index/share/ament_index/resource_index/packages/sensor_fusion_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_core/sensor_fusion_msgsConfig.cmake" "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_core/sensor_fusion_msgsConfig-version.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_core/sensor_fusion_msgsConfig.cmake" "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_core/sensor_fusion_msgsConfig-version.cmake" "DESTINATION" "share/sensor_fusion_msgs/cmake")
+
+# install(FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs/package.xml" "DESTINATION" "share/sensor_fusion_msgs")
+ament_cmake_symlink_install_files("/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs" FILES "/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs/package.xml" "DESTINATION" "share/sensor_fusion_msgs")

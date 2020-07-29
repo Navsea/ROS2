@@ -1,0 +1,24 @@
+[0.374s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher
+[0.696s] running develop
+[0.851s] running egg_info
+[0.851s] creating ros2_demo_publisher.egg-info
+[0.851s] writing ros2_demo_publisher.egg-info/PKG-INFO
+[0.852s] writing dependency_links to ros2_demo_publisher.egg-info/dependency_links.txt
+[0.852s] writing entry points to ros2_demo_publisher.egg-info/entry_points.txt
+[0.852s] writing requirements to ros2_demo_publisher.egg-info/requires.txt
+[0.853s] writing top-level names to ros2_demo_publisher.egg-info/top_level.txt
+[0.853s] writing manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'
+[0.887s] reading manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'
+[0.888s] writing manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'
+[0.889s] running build_ext
+[0.890s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages/ros2-demo-publisher.egg-link (link to .)
+[0.891s] Installing demo_publisher script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/ros2_demo_publisher
+[0.891s] 
+[0.891s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher
+[0.892s] running install_data
+[0.892s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index
+[0.892s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index/resource_index
+[0.892s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index/resource_index/packages
+[0.893s] copying resource/ros2_demo_publisher -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index/resource_index/packages
+[0.893s] copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ros2_demo_publisher
+[0.927s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher

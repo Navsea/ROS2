@@ -1,3 +1,0 @@
-[0.037s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1
-[0.052s] make: *** No targets.  Stop.
-[0.054s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1

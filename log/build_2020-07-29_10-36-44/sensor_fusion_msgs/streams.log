@@ -1,0 +1,30 @@
+[0.039s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs
+[0.059s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.088s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.336s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.345s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[0.425s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.525s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.555s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.556s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.598s] CMake Error at CMakeLists.txt:27 (find_package):
+[0.599s]   By not providing "Findsensor_fusion_msg_types.cmake" in CMAKE_MODULE_PATH
+[0.599s]   this project has asked CMake to find a package configuration file provided
+[0.599s]   by "sensor_fusion_msg_types", but CMake did not find one.
+[0.599s] 
+[0.599s]   Could not find a package configuration file provided by
+[0.599s]   "sensor_fusion_msg_types" with any of the following names:
+[0.599s] 
+[0.599s]     sensor_fusion_msg_typesConfig.cmake
+[0.600s]     sensor_fusion_msg_types-config.cmake
+[0.600s] 
+[0.600s]   Add the installation prefix of "sensor_fusion_msg_types" to
+[0.600s]   CMAKE_PREFIX_PATH or set "sensor_fusion_msg_types_DIR" to a directory
+[0.600s]   containing one of the above files.  If "sensor_fusion_msg_types" provides a
+[0.600s]   separate development package or SDK, be sure it has been installed.
+[0.600s] 
+[0.601s] 
+[0.602s] -- Configuring incomplete, errors occurred!
+[0.602s] See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeOutput.log".
+[0.602s] See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeError.log".
+[0.608s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs

@@ -1,0 +1,822 @@
+[0.000000] (-) TimerEvent: {}
+[0.000397] (ros2_demo_custommsg_create) JobQueued: {'identifier': 'ros2_demo_custommsg_create', 'dependencies': OrderedDict()}
+[0.000439] (ros2_demo_publisher) JobQueued: {'identifier': 'ros2_demo_publisher', 'dependencies': OrderedDict()}
+[0.000464] (ros2_demo_subscriber) JobQueued: {'identifier': 'ros2_demo_subscriber', 'dependencies': OrderedDict()}
+[0.000484] (sensor_fusion_msg_types) JobQueued: {'identifier': 'sensor_fusion_msg_types', 'dependencies': OrderedDict()}
+[0.000503] (sensor_fusion_msgs) JobQueued: {'identifier': 'sensor_fusion_msgs', 'dependencies': OrderedDict()}
+[0.000522] (ros2_demo_custommsg_pub) JobQueued: {'identifier': 'ros2_demo_custommsg_pub', 'dependencies': OrderedDict([('sensor_fusion_msgs', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs')])}
+[0.000544] (sensor_fusion_subscriber) JobQueued: {'identifier': 'sensor_fusion_subscriber', 'dependencies': OrderedDict([('sensor_fusion_msgs', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs')])}
+[0.000564] (sensor_fusion_msgs) JobStarted: {'identifier': 'sensor_fusion_msgs'}
+[0.051631] (sensor_fusion_msgs) JobProgress: {'identifier': 'sensor_fusion_msgs', 'progress': 'cmake'}
+[0.052448] (sensor_fusion_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[0.071005] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)\n'}
+[0.094276] (-) TimerEvent: {}
+[0.098977] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.194339] (-) TimerEvent: {}
+[0.294848] (-) TimerEvent: {}
+[0.360265] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.368222] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)\n'}
+[0.395435] (-) TimerEvent: {}
+[0.439775] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)\n'}
+[0.495969] (-) TimerEvent: {}
+[0.504624] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)\n'}
+[0.535649] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)\n'}
+[0.537450] (sensor_fusion_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.575398] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found sensor_fusion_msg_types: 0.0.0 (/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake)\n'}
+[0.596822] (-) TimerEvent: {}
+[0.626984] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[0.697064] (-) TimerEvent: {}
+[0.797619] (-) TimerEvent: {}
+[0.821447] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[0.873410] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[0.898189] (-) TimerEvent: {}
+[0.998718] (-) TimerEvent: {}
+[1.099300] (-) TimerEvent: {}
+[1.199786] (-) TimerEvent: {}
+[1.300216] (-) TimerEvent: {}
+[1.335441] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[1.339024] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)\n'}
+[1.378819] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[1.379222] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.379467] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[1.379612] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[1.400407] (-) TimerEvent: {}
+[1.405578] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.500464] (-) TimerEvent: {}
+[1.591790] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)\n'}
+[1.601009] (-) TimerEvent: {}
+[1.628354] (sensor_fusion_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.629729] (sensor_fusion_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.636122] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.701117] (-) TimerEvent: {}
+[1.801618] (-) TimerEvent: {}
+[1.852504] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.856695] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs\n'}
+[1.866654] (sensor_fusion_msgs) CommandEnded: {'returncode': 0}
+[1.871874] (sensor_fusion_msgs) JobProgress: {'identifier': 'sensor_fusion_msgs', 'progress': 'build'}
+[1.872130] (sensor_fusion_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs', '--', '-j1', '-l1'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[1.902184] (-) TimerEvent: {}
+[1.931255] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__cpp\x1b[0m\n'}
+[1.947580] (sensor_fusion_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.002239] (-) TimerEvent: {}
+[2.102760] (-) TimerEvent: {}
+[2.203316] (-) TimerEvent: {}
+[2.252481] (sensor_fusion_msgs) StdoutLine: {'line': b'[  3%] Built target sensor_fusion_msgs__cpp\n'}
+[2.267578] (sensor_fusion_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.303991] (-) TimerEvent: {}
+[2.404390] (-) TimerEvent: {}
+[2.504959] (-) TimerEvent: {}
+[2.605536] (-) TimerEvent: {}
+[2.614213] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.641907] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sensor_fusion_msgs/msg/dds_fastrtps/vinerows__type_support.cpp.o\x1b[0m\n'}
+[2.706081] (-) TimerEvent: {}
+[2.806642] (-) TimerEvent: {}
+[2.907179] (-) TimerEvent: {}
+[3.007754] (-) TimerEvent: {}
+[3.068002] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.108266] (-) TimerEvent: {}
+[3.174726] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 13%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.187189] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.208820] (-) TimerEvent: {}
+[3.309356] (-) TimerEvent: {}
+[3.409905] (-) TimerEvent: {}
+[3.476610] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.493837] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o\x1b[0m\n'}
+[3.510000] (-) TimerEvent: {}
+[3.610571] (-) TimerEvent: {}
+[3.711080] (-) TimerEvent: {}
+[3.811592] (-) TimerEvent: {}
+[3.912216] (-) TimerEvent: {}
+[3.914697] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.012724] (-) TimerEvent: {}
+[4.020766] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 24%] Built target sensor_fusion_msgs__rosidl_typesupport_cpp\n'}
+[4.044124] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.113293] (-) TimerEvent: {}
+[4.213812] (-) TimerEvent: {}
+[4.314362] (-) TimerEvent: {}
+[4.377125] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_generator_c\x1b[0m\n'}
+[4.391228] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_generator_c.dir/rosidl_generator_c/sensor_fusion_msgs/msg/vinerows__functions.c.o\x1b[0m\n'}
+[4.414956] (-) TimerEvent: {}
+[4.431006] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking C shared library libsensor_fusion_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.481294] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 34%] Built target sensor_fusion_msgs__rosidl_generator_c\n'}
+[4.494425] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.515602] (-) TimerEvent: {}
+[4.620041] (-) TimerEvent: {}
+[4.720564] (-) TimerEvent: {}
+[4.807706] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.821119] (-) TimerEvent: {}
+[4.831696] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sensor_fusion_msgs/msg/vinerows__type_support_c.cpp.o\x1b[0m\n'}
+[4.921284] (-) TimerEvent: {}
+[5.021758] (-) TimerEvent: {}
+[5.122326] (-) TimerEvent: {}
+[5.204979] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.222823] (-) TimerEvent: {}
+[5.321203] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 44%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.323402] (-) TimerEvent: {}
+[5.333436] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.424044] (-) TimerEvent: {}
+[5.524963] (-) TimerEvent: {}
+[5.625525] (-) TimerEvent: {}
+[5.642180] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[5.665783] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o\x1b[0m\n'}
+[5.701857] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.725940] (-) TimerEvent: {}
+[5.816165] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 55%] Built target sensor_fusion_msgs__rosidl_typesupport_c\n'}
+[5.826136] (-) TimerEvent: {}
+[5.831311] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.926640] (-) TimerEvent: {}
+[6.027183] (-) TimerEvent: {}
+[6.127742] (-) TimerEvent: {}
+[6.175776] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.191407] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sensor_fusion_msgs/msg/vinerows__type_support.c.o\x1b[0m\n'}
+[6.227016] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libsensor_fusion_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.227804] (-) TimerEvent: {}
+[6.282378] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 65%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_c\n'}
+[6.295726] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.328369] (-) TimerEvent: {}
+[6.428915] (-) TimerEvent: {}
+[6.529511] (-) TimerEvent: {}
+[6.630530] (-) TimerEvent: {}
+[6.642325] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[6.663810] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o\x1b[0m\n'}
+[6.730601] (-) TimerEvent: {}
+[6.831135] (-) TimerEvent: {}
+[6.931690] (-) TimerEvent: {}
+[6.969153] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.032280] (-) TimerEvent: {}
+[7.049051] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.071582] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs\x1b[0m\n'}
+[7.082645] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msgs\n'}
+[7.094260] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__py\x1b[0m\n'}
+[7.106304] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.132962] (-) TimerEvent: {}
+[7.233818] (-) TimerEvent: {}
+[7.334372] (-) TimerEvent: {}
+[7.434934] (-) TimerEvent: {}
+[7.535501] (-) TimerEvent: {}
+[7.600158] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 79%] Built target sensor_fusion_msgs__py\n'}
+[7.614158] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__python\x1b[0m\n'}
+[7.635675] (-) TimerEvent: {}
+[7.639262] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/sensor_fusion_msgs__python.dir/rosidl_generator_py/sensor_fusion_msgs/msg/_vinerows_s.c.o\x1b[0m\n'}
+[7.735921] (-) TimerEvent: {}
+[7.746395] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/libsensor_fusion_msgs__python.so\x1b[0m\n'}
+[7.836145] (-) TimerEvent: {}
+[7.843103] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 86%] Built target sensor_fusion_msgs__python\n'}
+[7.863701] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.892914] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.936707] (-) TimerEvent: {}
+[7.980924] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.037381] (-) TimerEvent: {}
+[8.095959] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 93%] Built target sensor_fusion_msgs__rosidl_typesupport_c__pyext\n'}
+[8.108424] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[8.130188] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.137810] (-) TimerEvent: {}
+[8.216373] (sensor_fusion_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.237861] (-) TimerEvent: {}
+[8.330431] (sensor_fusion_msgs) StdoutLine: {'line': b'[100%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.338383] (-) TimerEvent: {}
+[8.343481] (sensor_fusion_msgs) CommandEnded: {'returncode': 0}
+[8.418338] (sensor_fusion_msgs) JobProgress: {'identifier': 'sensor_fusion_msgs', 'progress': 'install'}
+[8.429301] (sensor_fusion_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs', '--target', 'install', '--', '-j1', '-l1'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[8.438454] (-) TimerEvent: {}
+[8.491191] (sensor_fusion_msgs) StdoutLine: {'line': b'[  3%] Built target sensor_fusion_msgs__cpp\n'}
+[8.520640] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 13%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.538553] (-) TimerEvent: {}
+[8.555335] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 24%] Built target sensor_fusion_msgs__rosidl_typesupport_cpp\n'}
+[8.588098] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 34%] Built target sensor_fusion_msgs__rosidl_generator_c\n'}
+[8.618307] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 44%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c\n'}
+[8.639043] (-) TimerEvent: {}
+[8.647882] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 55%] Built target sensor_fusion_msgs__rosidl_typesupport_c\n'}
+[8.699679] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 65%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_c\n'}
+[8.743589] (-) TimerEvent: {}
+[8.753555] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.798443] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msgs\n'}
+[8.823518] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 79%] Built target sensor_fusion_msgs__py\n'}
+[8.843799] (-) TimerEvent: {}
+[8.852847] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 86%] Built target sensor_fusion_msgs__python\n'}
+[8.902424] (sensor_fusion_msgs) StdoutLine: {'line': b'[ 93%] Built target sensor_fusion_msgs__rosidl_typesupport_c__pyext\n'}
+[8.933017] (sensor_fusion_msgs) StdoutLine: {'line': b'[100%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.944196] (-) TimerEvent: {}
+[8.957014] (sensor_fusion_msgs) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[8.965908] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.967029] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.967796] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/rosidl_interfaces/sensor_fusion_msgs\n'}
+[8.978078] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_c.so\n'}
+[8.988337] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/library_path.sh\n'}
+[8.997969] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/library_path.dsv\n'}
+[9.008051] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_cpp.so\n'}
+[9.018100] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.027929] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_fastrtps_c.h\n'}
+[9.037933] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[9.044723] (-) TimerEvent: {}
+[9.052978] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.069535] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows.h\n'}
+[9.079627] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__functions.h\n'}
+[9.090054] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__struct.h\n'}
+[9.099356] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__type_support.h\n'}
+[9.109246] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_generator_c.so\n'}
+[9.119331] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.129284] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.139572] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.145265] (-) TimerEvent: {}
+[9.149722] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows.hpp\n'}
+[9.170278] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__struct.hpp\n'}
+[9.180407] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__traits.hpp\n'}
+[9.190494] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.200339] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_introspection_c.h\n'}
+[9.210155] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_introspection_c.so\n'}
+[9.220022] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.230140] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[9.240486] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/pythonpath.sh\n'}
+[9.245811] (-) TimerEvent: {}
+[9.251019] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/pythonpath.dsv\n'}
+[9.272127] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/__init__.py\n'}
+[9.286010] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/msg/__init__.py\n'}
+[9.296128] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/msg/_vinerows.py\n'}
+[9.306026] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[9.317126] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[9.326899] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__python.so\n'}
+[9.336974] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/msg/Vinerows.idl\n'}
+[9.345906] (-) TimerEvent: {}
+[9.346742] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/msg/Vinerows.msg\n'}
+[9.356654] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/package_run_dependencies/sensor_fusion_msgs\n'}
+[9.377792] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/parent_prefix_path/sensor_fusion_msgs\n'}
+[9.388294] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/ament_prefix_path.sh\n'}
+[9.398263] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/ament_prefix_path.dsv\n'}
+[9.408486] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/path.sh\n'}
+[9.421376] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/path.dsv\n'}
+[9.431672] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.bash\n'}
+[9.441477] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.sh\n'}
+[9.446443] (-) TimerEvent: {}
+[9.451182] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.zsh\n'}
+[9.461205] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.dsv\n'}
+[9.482733] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.dsv\n'}
+[9.492612] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/packages/sensor_fusion_msgs\n'}
+[9.502331] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[9.512644] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.523616] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.533854] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.544002] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/sensor_fusion_msgsConfig.cmake\n'}
+[9.546542] (-) TimerEvent: {}
+[9.554586] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/sensor_fusion_msgsConfig-version.cmake\n'}
+[9.570195] (sensor_fusion_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.xml\n'}
+[9.623582] (sensor_fusion_msgs) StdoutLine: {'line': b"Compiling '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/__init__.py'...\n"}
+[9.637152] (sensor_fusion_msgs) CommandEnded: {'returncode': 0}
+[9.648360] (-) TimerEvent: {}
+[9.701842] (sensor_fusion_msgs) JobEnded: {'identifier': 'sensor_fusion_msgs', 'rc': 0}
+[9.702880] (ros2_demo_custommsg_create) JobStarted: {'identifier': 'ros2_demo_custommsg_create'}
+[9.747235] (ros2_demo_custommsg_create) JobProgress: {'identifier': 'ros2_demo_custommsg_create', 'progress': 'cmake'}
+[9.747623] (ros2_demo_custommsg_create) Command: {'cmd': ['/usr/bin/cmake', '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[9.748703] (-) TimerEvent: {}
+[9.813770] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[9.849157] (-) TimerEvent: {}
+[9.880093] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[9.883899] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[9.949683] (-) TimerEvent: {}
+[9.953824] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[9.954646] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[10.035925] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.042244] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.049852] (-) TimerEvent: {}
+[10.150785] (-) TimerEvent: {}
+[10.251371] (-) TimerEvent: {}
+[10.290892] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.293668] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[10.351746] (-) TimerEvent: {}
+[10.384207] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[10.387471] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[10.451929] (-) TimerEvent: {}
+[10.486906] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.492372] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.552520] (-) TimerEvent: {}
+[10.653074] (-) TimerEvent: {}
+[10.753631] (-) TimerEvent: {}
+[10.854155] (-) TimerEvent: {}
+[10.864028] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[10.871712] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)\n'}
+[10.907924] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[10.908389] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.954679] (-) TimerEvent: {}
+[11.055292] (-) TimerEvent: {}
+[11.142021] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[11.155832] (-) TimerEvent: {}
+[11.175398] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)\n'}
+[11.198459] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)\n'}
+[11.244099] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)\n'}
+[11.246034] (ros2_demo_custommsg_create) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.247103] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.255918] (-) TimerEvent: {}
+[11.329346] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[11.329982] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[11.356516] (-) TimerEvent: {}
+[11.414561] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[11.415060] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[11.456663] (-) TimerEvent: {}
+[11.485733] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[11.486199] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[11.556018] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[11.556960] (-) TimerEvent: {}
+[11.561241] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.621206] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)\n'}
+[11.627638] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)\n'}
+[11.635632] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)\n'}
+[11.657064] (-) TimerEvent: {}
+[11.703391] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[11.724395] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/eloquent/include  \n'}
+[11.757715] (-) TimerEvent: {}
+[11.784187] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)\n'}
+[11.858129] (-) TimerEvent: {}
+[11.919042] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[11.958678] (-) TimerEvent: {}
+[12.059803] (-) TimerEvent: {}
+[12.160319] (-) TimerEvent: {}
+[12.164475] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[12.214941] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[12.260882] (-) TimerEvent: {}
+[12.361852] (-) TimerEvent: {}
+[12.462544] (-) TimerEvent: {}
+[12.562983] (-) TimerEvent: {}
+[12.571560] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[12.575526] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)\n'}
+[12.618627] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[12.619051] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.619206] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[12.619343] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[12.646645] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[12.663553] (-) TimerEvent: {}
+[12.764055] (-) TimerEvent: {}
+[12.844815] (ros2_demo_custommsg_create) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.846105] (ros2_demo_custommsg_create) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.853431] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.864107] (-) TimerEvent: {}
+[12.964679] (-) TimerEvent: {}
+[13.022762] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Generating done\n'}
+[13.026646] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Build files have been written to: /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create\n'}
+[13.033888] (ros2_demo_custommsg_create) CommandEnded: {'returncode': 0}
+[13.035443] (ros2_demo_custommsg_create) JobProgress: {'identifier': 'ros2_demo_custommsg_create', 'progress': 'build'}
+[13.035493] (ros2_demo_custommsg_create) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create', '--', '-j1', '-l1'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[13.065249] (-) TimerEvent: {}
+[13.091864] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__cpp\x1b[0m\n'}
+[13.113732] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[13.165783] (-) TimerEvent: {}
+[13.266325] (-) TimerEvent: {}
+[13.366878] (-) TimerEvent: {}
+[13.409336] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[  3%] Built target new_msg__cpp\n'}
+[13.421694] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.466962] (-) TimerEvent: {}
+[13.567488] (-) TimerEvent: {}
+[13.668045] (-) TimerEvent: {}
+[13.740844] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[13.757428] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_demo_custommsg_create/msg/dds_fastrtps/custom__type_support.cpp.o\x1b[0m\n'}
+[13.768099] (-) TimerEvent: {}
+[13.868677] (-) TimerEvent: {}
+[13.969194] (-) TimerEvent: {}
+[14.069748] (-) TimerEvent: {}
+[14.171355] (-) TimerEvent: {}
+[14.186507] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking CXX shared library libnew_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[14.271871] (-) TimerEvent: {}
+[14.279775] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 13%] Built target new_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[14.298535] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[14.371914] (-) TimerEvent: {}
+[14.472459] (-) TimerEvent: {}
+[14.572982] (-) TimerEvent: {}
+[14.630521] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_generator_c\x1b[0m\n'}
+[14.652964] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/new_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_demo_custommsg_create/msg/custom__functions.c.o\x1b[0m\n'}
+[14.673549] (-) TimerEvent: {}
+[14.694407] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libnew_msg__rosidl_generator_c.so\x1b[0m\n'}
+[14.738174] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 24%] Built target new_msg__rosidl_generator_c\n'}
+[14.750818] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.773822] (-) TimerEvent: {}
+[14.874662] (-) TimerEvent: {}
+[14.975229] (-) TimerEvent: {}
+[15.076169] (-) TimerEvent: {}
+[15.078107] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[15.106410] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_demo_custommsg_create/msg/custom__type_support_c.cpp.o\x1b[0m\n'}
+[15.176328] (-) TimerEvent: {}
+[15.276831] (-) TimerEvent: {}
+[15.377362] (-) TimerEvent: {}
+[15.462800] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libnew_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.477944] (-) TimerEvent: {}
+[15.578547] (-) TimerEvent: {}
+[15.592871] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 34%] Built target new_msg__rosidl_typesupport_fastrtps_c\n'}
+[15.610238] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.679038] (-) TimerEvent: {}
+[15.779619] (-) TimerEvent: {}
+[15.880159] (-) TimerEvent: {}
+[15.930748] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_typesupport_c\x1b[0m\n'}
+[15.948692] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_demo_custommsg_create/msg/custom__type_support.cpp.o\x1b[0m\n'}
+[15.980475] (-) TimerEvent: {}
+[16.009618] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libnew_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.080847] (-) TimerEvent: {}
+[16.125699] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 44%] Built target new_msg__rosidl_typesupport_c\n'}
+[16.142289] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[16.182319] (-) TimerEvent: {}
+[16.282851] (-) TimerEvent: {}
+[16.386125] (-) TimerEvent: {}
+[16.492466] (-) TimerEvent: {}
+[16.606789] (-) TimerEvent: {}
+[16.707549] (-) TimerEvent: {}
+[16.741024] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[16.762270] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_demo_custommsg_create/msg/custom__type_support.cpp.o\x1b[0m\n'}
+[16.808106] (-) TimerEvent: {}
+[16.908695] (-) TimerEvent: {}
+[17.009708] (-) TimerEvent: {}
+[17.110265] (-) TimerEvent: {}
+[17.117774] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libnew_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.215282] (-) TimerEvent: {}
+[17.261806] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 55%] Built target new_msg__rosidl_typesupport_introspection_cpp\n'}
+[17.273467] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.315460] (-) TimerEvent: {}
+[17.416460] (-) TimerEvent: {}
+[17.521955] (-) TimerEvent: {}
+[17.596803] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[17.613235] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_demo_custommsg_create/msg/custom__type_support.cpp.o\x1b[0m\n'}
+[17.622041] (-) TimerEvent: {}
+[17.722570] (-) TimerEvent: {}
+[17.823183] (-) TimerEvent: {}
+[17.924159] (-) TimerEvent: {}
+[18.024708] (-) TimerEvent: {}
+[18.031918] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libnew_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[18.125242] (-) TimerEvent: {}
+[18.192683] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 65%] Built target new_msg__rosidl_typesupport_cpp\n'}
+[18.205466] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[18.225852] (-) TimerEvent: {}
+[18.326857] (-) TimerEvent: {}
+[18.427410] (-) TimerEvent: {}
+[18.527964] (-) TimerEvent: {}
+[18.571571] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[18.591659] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/new_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_demo_custommsg_create/msg/custom__type_support.c.o\x1b[0m\n'}
+[18.628524] (-) TimerEvent: {}
+[18.633510] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking C shared library libnew_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[18.678302] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 75%] Built target new_msg__rosidl_typesupport_introspection_c\n'}
+[18.691082] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg\x1b[0m\n'}
+[18.702931] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 75%] Built target new_msg\n'}
+[18.721386] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__py\x1b[0m\n'}
+[18.729099] (-) TimerEvent: {}
+[18.734703] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[18.829599] (-) TimerEvent: {}
+[18.930171] (-) TimerEvent: {}
+[19.031219] (-) TimerEvent: {}
+[19.132391] (-) TimerEvent: {}
+[19.239793] (-) TimerEvent: {}
+[19.322429] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 79%] Built target new_msg__py\n'}
+[19.333884] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__python\x1b[0m\n'}
+[19.339853] (-) TimerEvent: {}
+[19.368191] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/new_msg__python.dir/rosidl_generator_py/ros2_demo_custommsg_create/msg/_custom_s.c.o\x1b[0m\n'}
+[19.440525] (-) TimerEvent: {}
+[19.470824] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/ros2_demo_custommsg_create/libnew_msg__python.so\x1b[0m\n'}
+[19.540984] (-) TimerEvent: {}
+[19.570129] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 86%] Built target new_msg__python\n'}
+[19.582813] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros2_demo_custommsg_create__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[19.613755] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ros2_demo_custommsg_create__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_demo_custommsg_create/_ros2_demo_custommsg_create_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[19.641243] (-) TimerEvent: {}
+[19.696912] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/ros2_demo_custommsg_create/ros2_demo_custommsg_create_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.741580] (-) TimerEvent: {}
+[19.821444] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 93%] Built target ros2_demo_custommsg_create__rosidl_typesupport_fastrtps_c__pyext\n'}
+[19.833246] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros2_demo_custommsg_create__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[19.842179] (-) TimerEvent: {}
+[19.854715] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/ros2_demo_custommsg_create__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_demo_custommsg_create/_ros2_demo_custommsg_create_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[19.942744] (-) TimerEvent: {}
+[19.943792] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/ros2_demo_custommsg_create/ros2_demo_custommsg_create_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.043210] (-) TimerEvent: {}
+[20.059297] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[100%] Built target ros2_demo_custommsg_create__rosidl_typesupport_c__pyext\n'}
+[20.075485] (ros2_demo_custommsg_create) CommandEnded: {'returncode': 0}
+[20.127670] (ros2_demo_custommsg_create) JobProgress: {'identifier': 'ros2_demo_custommsg_create', 'progress': 'install'}
+[20.127928] (ros2_demo_custommsg_create) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create', '--target', 'install', '--', '-j1', '-l1'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_create'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[20.143351] (-) TimerEvent: {}
+[20.201778] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[  3%] Built target new_msg__cpp\n'}
+[20.232486] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 13%] Built target new_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[20.243819] (-) TimerEvent: {}
+[20.267689] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 24%] Built target new_msg__rosidl_generator_c\n'}
+[20.303745] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 34%] Built target new_msg__rosidl_typesupport_fastrtps_c\n'}
+[20.333454] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 44%] Built target new_msg__rosidl_typesupport_c\n'}
+[20.344151] (-) TimerEvent: {}
+[20.363958] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 55%] Built target new_msg__rosidl_typesupport_introspection_cpp\n'}
+[20.392690] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 65%] Built target new_msg__rosidl_typesupport_cpp\n'}
+[20.418626] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 75%] Built target new_msg__rosidl_typesupport_introspection_c\n'}
+[20.441151] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 75%] Built target new_msg\n'}
+[20.444433] (-) TimerEvent: {}
+[20.475450] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 79%] Built target new_msg__py\n'}
+[20.504867] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 86%] Built target new_msg__python\n'}
+[20.534768] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[ 93%] Built target ros2_demo_custommsg_create__rosidl_typesupport_fastrtps_c__pyext\n'}
+[20.544499] (-) TimerEvent: {}
+[20.575653] (ros2_demo_custommsg_create) StdoutLine: {'line': b'[100%] Built target ros2_demo_custommsg_create__rosidl_typesupport_c__pyext\n'}
+[20.602685] (ros2_demo_custommsg_create) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[20.612576] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.613542] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.614301] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ament_index/resource_index/rosidl_interfaces/ros2_demo_custommsg_create\n'}
+[20.624682] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom.hpp\n'}
+[20.642090] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__struct.hpp\n'}
+[20.646176] (-) TimerEvent: {}
+[20.653801] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__traits.hpp\n'}
+[20.664087] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom.h\n'}
+[20.676773] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__functions.h\n'}
+[20.686384] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__struct.h\n'}
+[20.696147] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__type_support.h\n'}
+[20.705640] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.715256] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/library_path.sh\n'}
+[20.725062] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/library_path.dsv\n'}
+[20.735159] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_generator_c.so\n'}
+[20.745214] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_typesupport_c.so\n'}
+[20.746629] (-) TimerEvent: {}
+[20.767732] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_typesupport_cpp.so\n'}
+[20.777967] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__rosidl_typesupport_introspection_c.h\n'}
+[20.788134] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.798316] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_typesupport_introspection_c.so\n'}
+[20.808294] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.818638] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[20.828497] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__rosidl_typesupport_fastrtps_c.h\n'}
+[20.838375] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.847397] (-) TimerEvent: {}
+[20.849008] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[20.871339] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/custom__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.881340] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/include/ros2_demo_custommsg_create/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.891702] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.901718] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/pythonpath.sh\n'}
+[20.911439] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/pythonpath.dsv\n'}
+[20.921437] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages/ros2_demo_custommsg_create/__init__.py\n'}
+[20.931758] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages/ros2_demo_custommsg_create/msg/__init__.py\n'}
+[20.941488] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages/ros2_demo_custommsg_create/msg/_custom.py\n'}
+[20.947880] (-) TimerEvent: {}
+[20.952360] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages/ros2_demo_custommsg_create/ros2_demo_custommsg_create_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[20.973842] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages/ros2_demo_custommsg_create/ros2_demo_custommsg_create_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[20.984483] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/libnew_msg__python.so\n'}
+[20.994409] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/msg/Custom.idl\n'}
+[21.004577] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/msg/Custom.msg\n'}
+[21.014735] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ament_index/resource_index/package_run_dependencies/ros2_demo_custommsg_create\n'}
+[21.024392] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ament_index/resource_index/parent_prefix_path/ros2_demo_custommsg_create\n'}
+[21.034062] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/ament_prefix_path.sh\n'}
+[21.043875] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/ament_prefix_path.dsv\n'}
+[21.048204] (-) TimerEvent: {}
+[21.053993] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/path.sh\n'}
+[21.075018] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/environment/path.dsv\n'}
+[21.085021] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/local_setup.bash\n'}
+[21.094729] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/local_setup.sh\n'}
+[21.113229] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/local_setup.zsh\n'}
+[21.123675] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/local_setup.dsv\n'}
+[21.133913] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.dsv\n'}
+[21.144257] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ament_index/resource_index/packages/ros2_demo_custommsg_create\n'}
+[21.148281] (-) TimerEvent: {}
+[21.154842] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/cmake/rosidl_cmake-extras.cmake\n'}
+[21.167881] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[21.179418] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[21.197830] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[21.209512] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/cmake/ros2_demo_custommsg_createConfig.cmake\n'}
+[21.221137] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/cmake/ros2_demo_custommsg_createConfig-version.cmake\n'}
+[21.233700] (ros2_demo_custommsg_create) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.xml\n'}
+[21.248806] (-) TimerEvent: {}
+[21.291071] (ros2_demo_custommsg_create) StdoutLine: {'line': b"Compiling '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages/ros2_demo_custommsg_create/__init__.py'...\n"}
+[21.304807] (ros2_demo_custommsg_create) CommandEnded: {'returncode': 0}
+[21.348907] (-) TimerEvent: {}
+[21.351382] (ros2_demo_custommsg_create) JobEnded: {'identifier': 'ros2_demo_custommsg_create', 'rc': 0}
+[21.352347] (ros2_demo_publisher) JobStarted: {'identifier': 'ros2_demo_publisher'}
+[21.449482] (-) TimerEvent: {}
+[21.550469] (-) TimerEvent: {}
+[21.651015] (-) TimerEvent: {}
+[21.726058] (ros2_demo_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher', '--editable', '--build-directory', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher/build', '--no-deps', 'install_data', '--install-dir', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kenneth', 'LC_TIME': 'de_BE.UTF-8', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1150', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib', 'SHLVL': '1', 'OLDPWD': '/opt/pycharm-community-2020.1.4/bin', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/kenneth', 'DESKTOP_SESSION': 'ubuntu', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/jetbrains-pycharm-ce.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_BE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8489', 'COLCON_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'kenneth', 'GTK_IM_MODULE': 'ibus', '_': '/home/kenneth/.local/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'kenneth', 'XDG_SESSION_ID': '1', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '1', 'PATH': '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_BE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_BE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'de_BE.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_BE.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_BE.UTF-8', 'XDG_VTNR': '1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'de_BE.UTF-8', 'PYTHONPATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages', 'LC_PAPER': 'de_BE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types'}, 'shell': False}
+[21.751639] (-) TimerEvent: {}
+[21.852203] (-) TimerEvent: {}
+[21.953173] (-) TimerEvent: {}
+[22.048419] (ros2_demo_publisher) StdoutLine: {'line': b'running develop\n'}
+[22.053699] (-) TimerEvent: {}
+[22.154339] (-) TimerEvent: {}
+[22.202802] (ros2_demo_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[22.203074] (ros2_demo_publisher) StdoutLine: {'line': b'creating ros2_demo_publisher.egg-info\n'}
+[22.203442] (ros2_demo_publisher) StdoutLine: {'line': b'writing ros2_demo_publisher.egg-info/PKG-INFO\n'}
+[22.203889] (ros2_demo_publisher) StdoutLine: {'line': b'writing dependency_links to ros2_demo_publisher.egg-info/dependency_links.txt\n'}
+[22.204171] (ros2_demo_publisher) StdoutLine: {'line': b'writing entry points to ros2_demo_publisher.egg-info/entry_points.txt\n'}
+[22.204479] (ros2_demo_publisher) StdoutLine: {'line': b'writing requirements to ros2_demo_publisher.egg-info/requires.txt\n'}
+[22.204694] (ros2_demo_publisher) StdoutLine: {'line': b'writing top-level names to ros2_demo_publisher.egg-info/top_level.txt\n'}
+[22.205313] (ros2_demo_publisher) StdoutLine: {'line': b"writing manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'\n"}
+[22.239001] (ros2_demo_publisher) StdoutLine: {'line': b"reading manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'\n"}
+[22.240133] (ros2_demo_publisher) StdoutLine: {'line': b"writing manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'\n"}
+[22.241684] (ros2_demo_publisher) StdoutLine: {'line': b'running build_ext\n'}
+[22.242072] (ros2_demo_publisher) StdoutLine: {'line': b'Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages/ros2-demo-publisher.egg-link (link to .)\n'}
+[22.243060] (ros2_demo_publisher) StdoutLine: {'line': b'Installing demo_publisher script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/ros2_demo_publisher\n'}
+[22.243526] (ros2_demo_publisher) StdoutLine: {'line': b'\n'}
+[22.243674] (ros2_demo_publisher) StdoutLine: {'line': b'Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher\n'}
+[22.244014] (ros2_demo_publisher) StdoutLine: {'line': b'running install_data\n'}
+[22.244347] (ros2_demo_publisher) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index\n'}
+[22.244543] (ros2_demo_publisher) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index/resource_index\n'}
+[22.244715] (ros2_demo_publisher) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index/resource_index/packages\n'}
+[22.244952] (ros2_demo_publisher) StdoutLine: {'line': b'copying resource/ros2_demo_publisher -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ament_index/resource_index/packages\n'}
+[22.245212] (ros2_demo_publisher) StdoutLine: {'line': b'copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/share/ros2_demo_publisher\n'}
+[22.254958] (-) TimerEvent: {}
+[22.279416] (ros2_demo_publisher) CommandEnded: {'returncode': 0}
+[22.328757] (ros2_demo_publisher) JobEnded: {'identifier': 'ros2_demo_publisher', 'rc': 0}
+[22.330225] (ros2_demo_subscriber) JobStarted: {'identifier': 'ros2_demo_subscriber'}
+[22.363140] (-) TimerEvent: {}
+[22.463465] (-) TimerEvent: {}
+[22.564553] (-) TimerEvent: {}
+[22.670029] (-) TimerEvent: {}
+[22.759196] (ros2_demo_subscriber) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber', '--editable', '--build-directory', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber/build', '--no-deps', 'install_data', '--install-dir', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kenneth', 'LC_TIME': 'de_BE.UTF-8', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1150', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib', 'SHLVL': '1', 'OLDPWD': '/opt/pycharm-community-2020.1.4/bin', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/kenneth', 'DESKTOP_SESSION': 'ubuntu', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/jetbrains-pycharm-ce.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_BE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8489', 'COLCON_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'kenneth', 'GTK_IM_MODULE': 'ibus', '_': '/home/kenneth/.local/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'kenneth', 'XDG_SESSION_ID': '1', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '1', 'PATH': '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_BE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_BE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'de_BE.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_BE.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_BE.UTF-8', 'XDG_VTNR': '1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'de_BE.UTF-8', 'PYTHONPATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages', 'LC_PAPER': 'de_BE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types'}, 'shell': False}
+[22.770634] (-) TimerEvent: {}
+[22.871667] (-) TimerEvent: {}
+[22.972166] (-) TimerEvent: {}
+[23.072751] (-) TimerEvent: {}
+[23.119397] (ros2_demo_subscriber) StdoutLine: {'line': b'running develop\n'}
+[23.172877] (-) TimerEvent: {}
+[23.270706] (ros2_demo_subscriber) StdoutLine: {'line': b'running egg_info\n'}
+[23.271153] (ros2_demo_subscriber) StdoutLine: {'line': b'creating ros2_demo_subscriber.egg-info\n'}
+[23.271654] (ros2_demo_subscriber) StdoutLine: {'line': b'writing ros2_demo_subscriber.egg-info/PKG-INFO\n'}
+[23.272330] (ros2_demo_subscriber) StdoutLine: {'line': b'writing dependency_links to ros2_demo_subscriber.egg-info/dependency_links.txt\n'}
+[23.272681] (ros2_demo_subscriber) StdoutLine: {'line': b'writing entry points to ros2_demo_subscriber.egg-info/entry_points.txt\n'}
+[23.272997] (ros2_demo_subscriber) StdoutLine: {'line': b'writing requirements to ros2_demo_subscriber.egg-info/requires.txt\n'}
+[23.273108] (-) TimerEvent: {}
+[23.278542] (ros2_demo_subscriber) StdoutLine: {'line': b'writing top-level names to ros2_demo_subscriber.egg-info/top_level.txt\n'}
+[23.279035] (ros2_demo_subscriber) StdoutLine: {'line': b"writing manifest file 'ros2_demo_subscriber.egg-info/SOURCES.txt'\n"}
+[23.336556] (ros2_demo_subscriber) StdoutLine: {'line': b"reading manifest file 'ros2_demo_subscriber.egg-info/SOURCES.txt'\n"}
+[23.337875] (ros2_demo_subscriber) StdoutLine: {'line': b"writing manifest file 'ros2_demo_subscriber.egg-info/SOURCES.txt'\n"}
+[23.340083] (ros2_demo_subscriber) StdoutLine: {'line': b'running build_ext\n'}
+[23.340533] (ros2_demo_subscriber) StdoutLine: {'line': b'Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages/ros2-demo-subscriber.egg-link (link to .)\n'}
+[23.341652] (ros2_demo_subscriber) StdoutLine: {'line': b'Installing demo_subscriber script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/ros2_demo_subscriber\n'}
+[23.342158] (ros2_demo_subscriber) StdoutLine: {'line': b'\n'}
+[23.342351] (ros2_demo_subscriber) StdoutLine: {'line': b'Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber\n'}
+[23.342652] (ros2_demo_subscriber) StdoutLine: {'line': b'running install_data\n'}
+[23.342943] (ros2_demo_subscriber) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/share/ament_index\n'}
+[23.343138] (ros2_demo_subscriber) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/share/ament_index/resource_index\n'}
+[23.343430] (ros2_demo_subscriber) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/share/ament_index/resource_index/packages\n'}
+[23.343656] (ros2_demo_subscriber) StdoutLine: {'line': b'copying resource/ros2_demo_subscriber -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/share/ament_index/resource_index/packages\n'}
+[23.344008] (ros2_demo_subscriber) StdoutLine: {'line': b'copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/share/ros2_demo_subscriber\n'}
+[23.373333] (-) TimerEvent: {}
+[23.403161] (ros2_demo_subscriber) CommandEnded: {'returncode': 0}
+[23.442498] (ros2_demo_subscriber) JobEnded: {'identifier': 'ros2_demo_subscriber', 'rc': 0}
+[23.443402] (sensor_fusion_msg_types) JobStarted: {'identifier': 'sensor_fusion_msg_types'}
+[23.482348] (-) TimerEvent: {}
+[23.489950] (sensor_fusion_msg_types) JobProgress: {'identifier': 'sensor_fusion_msg_types', 'progress': 'cmake'}
+[23.491055] (sensor_fusion_msg_types) JobProgress: {'identifier': 'sensor_fusion_msg_types', 'progress': 'build'}
+[23.491497] (sensor_fusion_msg_types) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msg_types', '--', '-j1', '-l1'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msg_types', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msg_types'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[23.567142] (sensor_fusion_msg_types) StdoutLine: {'line': b'[  3%] Built target sensor_fusion_msg_types__cpp\n'}
+[23.582465] (-) TimerEvent: {}
+[23.595861] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 13%] Built target sensor_fusion_msg_types__rosidl_typesupport_fastrtps_cpp\n'}
+[23.645745] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 24%] Built target sensor_fusion_msg_types__rosidl_typesupport_cpp\n'}
+[23.671639] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 34%] Built target sensor_fusion_msg_types__rosidl_generator_c\n'}
+[23.682544] (-) TimerEvent: {}
+[23.723667] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 44%] Built target sensor_fusion_msg_types__rosidl_typesupport_fastrtps_c\n'}
+[23.771678] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 55%] Built target sensor_fusion_msg_types__rosidl_typesupport_c\n'}
+[23.782605] (-) TimerEvent: {}
+[23.807717] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 65%] Built target sensor_fusion_msg_types__rosidl_typesupport_introspection_cpp\n'}
+[23.852877] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msg_types__rosidl_typesupport_introspection_c\n'}
+[23.878202] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msg_types\n'}
+[23.883227] (-) TimerEvent: {}
+[23.911894] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 79%] Built target sensor_fusion_msg_types__py\n'}
+[23.946918] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 86%] Built target sensor_fusion_msg_types__python\n'}
+[23.978572] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 93%] Built target sensor_fusion_msg_types__rosidl_typesupport_c__pyext\n'}
+[23.983689] (-) TimerEvent: {}
+[24.022329] (sensor_fusion_msg_types) StdoutLine: {'line': b'[100%] Built target sensor_fusion_msg_types__rosidl_typesupport_fastrtps_c__pyext\n'}
+[24.035100] (sensor_fusion_msg_types) CommandEnded: {'returncode': 0}
+[24.084269] (-) TimerEvent: {}
+[24.098402] (sensor_fusion_msg_types) JobProgress: {'identifier': 'sensor_fusion_msg_types', 'progress': 'install'}
+[24.098610] (sensor_fusion_msg_types) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msg_types', '--target', 'install', '--', '-j1', '-l1'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msg_types', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kenneth'), ('LC_TIME', 'de_BE.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1150'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/opt/pycharm-community-2020.1.4/bin'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/kenneth'), ('DESKTOP_SESSION', 'ubuntu'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/jetbrains-pycharm-ce.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_BE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8489'), ('COLCON_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'kenneth'), ('GTK_IM_MODULE', 'ibus'), ('_', '/home/kenneth/.local/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'kenneth'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'de_BE.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msg_types'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('PYTHONPATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'de_BE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent')]), 'shell': False}
+[24.160151] (sensor_fusion_msg_types) StdoutLine: {'line': b'[  3%] Built target sensor_fusion_msg_types__cpp\n'}
+[24.184794] (-) TimerEvent: {}
+[24.198165] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 13%] Built target sensor_fusion_msg_types__rosidl_typesupport_fastrtps_cpp\n'}
+[24.231206] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 24%] Built target sensor_fusion_msg_types__rosidl_typesupport_cpp\n'}
+[24.257123] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 34%] Built target sensor_fusion_msg_types__rosidl_generator_c\n'}
+[24.285332] (-) TimerEvent: {}
+[24.287586] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 44%] Built target sensor_fusion_msg_types__rosidl_typesupport_fastrtps_c\n'}
+[24.333543] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 55%] Built target sensor_fusion_msg_types__rosidl_typesupport_c\n'}
+[24.363537] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 65%] Built target sensor_fusion_msg_types__rosidl_typesupport_introspection_cpp\n'}
+[24.385931] (-) TimerEvent: {}
+[24.397513] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msg_types__rosidl_typesupport_introspection_c\n'}
+[24.427930] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 75%] Built target sensor_fusion_msg_types\n'}
+[24.453510] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 79%] Built target sensor_fusion_msg_types__py\n'}
+[24.482959] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 86%] Built target sensor_fusion_msg_types__python\n'}
+[24.486414] (-) TimerEvent: {}
+[24.524477] (sensor_fusion_msg_types) StdoutLine: {'line': b'[ 93%] Built target sensor_fusion_msg_types__rosidl_typesupport_c__pyext\n'}
+[24.563223] (sensor_fusion_msg_types) StdoutLine: {'line': b'[100%] Built target sensor_fusion_msg_types__rosidl_typesupport_fastrtps_c__pyext\n'}
+[24.586506] (-) TimerEvent: {}
+[24.592283] (sensor_fusion_msg_types) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[24.601824] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.602770] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[24.603370] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/ament_index/resource_index/rosidl_interfaces/sensor_fusion_msg_types\n'}
+[24.607640] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_typesupport_c.so\n'}
+[24.608227] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/library_path.sh\n'}
+[24.608745] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/library_path.dsv\n'}
+[24.609374] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_typesupport_cpp.so\n'}
+[24.610263] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[24.610691] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__rosidl_typesupport_fastrtps_c.h\n'}
+[24.611349] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_typesupport_fastrtps_c.so\n'}
+[24.612173] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/rosidl_generator_c__visibility_control.h\n'}
+[24.612585] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow.h\n'}
+[24.613000] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__functions.h\n'}
+[24.613347] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__struct.h\n'}
+[24.613752] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__type_support.h\n'}
+[24.614379] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_generator_c.so\n'}
+[24.615210] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[24.615655] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.616296] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_typesupport_fastrtps_cpp.so\n'}
+[24.617281] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow.hpp\n'}
+[24.617739] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__struct.hpp\n'}
+[24.618158] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__traits.hpp\n'}
+[24.618859] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[24.619284] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__rosidl_typesupport_introspection_c.h\n'}
+[24.619995] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_typesupport_introspection_c.so\n'}
+[24.620721] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.621388] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__rosidl_typesupport_introspection_cpp.so\n'}
+[24.621901] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/pythonpath.sh\n'}
+[24.622404] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/pythonpath.dsv\n'}
+[24.622986] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages/sensor_fusion_msg_types/__init__.py\n'}
+[24.623704] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages/sensor_fusion_msg_types/msg/__init__.py\n'}
+[24.624242] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages/sensor_fusion_msg_types/msg/_vinerow.py\n'}
+[24.624891] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages/sensor_fusion_msg_types/sensor_fusion_msg_types_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[24.625740] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages/sensor_fusion_msg_types/sensor_fusion_msg_types_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[24.626384] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/libsensor_fusion_msg_types__python.so\n'}
+[24.626986] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/msg/Vinerow.idl\n'}
+[24.627510] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/msg/Vinerow.msg\n'}
+[24.628041] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/ament_index/resource_index/package_run_dependencies/sensor_fusion_msg_types\n'}
+[24.628578] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/ament_index/resource_index/parent_prefix_path/sensor_fusion_msg_types\n'}
+[24.629091] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/ament_prefix_path.sh\n'}
+[24.629599] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/ament_prefix_path.dsv\n'}
+[24.630178] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/path.sh\n'}
+[24.630686] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/environment/path.dsv\n'}
+[24.631189] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/local_setup.bash\n'}
+[24.631713] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/local_setup.sh\n'}
+[24.632218] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/local_setup.zsh\n'}
+[24.632749] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/local_setup.dsv\n'}
+[24.633367] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.dsv\n'}
+[24.648593] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/ament_index/resource_index/packages/sensor_fusion_msg_types\n'}
+[24.649169] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake/rosidl_cmake-extras.cmake\n'}
+[24.649712] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.650309] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[24.650870] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[24.651388] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake/sensor_fusion_msg_typesConfig.cmake\n'}
+[24.651818] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake/sensor_fusion_msg_typesConfig-version.cmake\n'}
+[24.652308] (sensor_fusion_msg_types) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.xml\n'}
+[24.687050] (-) TimerEvent: {}
+[24.699045] (sensor_fusion_msg_types) CommandEnded: {'returncode': 0}
+[24.762311] (sensor_fusion_msg_types) JobEnded: {'identifier': 'sensor_fusion_msg_types', 'rc': 0}
+[24.763246] (ros2_demo_custommsg_pub) JobStarted: {'identifier': 'ros2_demo_custommsg_pub'}
+[24.793773] (-) TimerEvent: {}
+[24.894705] (-) TimerEvent: {}
+[24.995672] (-) TimerEvent: {}
+[25.096266] (-) TimerEvent: {}
+[25.148940] (ros2_demo_custommsg_pub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub', '--editable', '--build-directory', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub/build', '--no-deps', 'install_data', '--install-dir', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kenneth', 'LC_TIME': 'de_BE.UTF-8', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1150', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib', 'SHLVL': '1', 'OLDPWD': '/opt/pycharm-community-2020.1.4/bin', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/kenneth', 'DESKTOP_SESSION': 'ubuntu', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/jetbrains-pycharm-ce.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_BE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8489', 'COLCON_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'kenneth', 'GTK_IM_MODULE': 'ibus', '_': '/home/kenneth/.local/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'kenneth', 'XDG_SESSION_ID': '1', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '1', 'PATH': '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_BE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_BE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'de_BE.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_BE.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_BE.UTF-8', 'XDG_VTNR': '1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'de_BE.UTF-8', 'PYTHONPATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages', 'LC_PAPER': 'de_BE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types'}, 'shell': False}
+[25.196827] (-) TimerEvent: {}
+[25.297832] (-) TimerEvent: {}
+[25.398420] (-) TimerEvent: {}
+[25.470934] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'running develop\n'}
+[25.498962] (-) TimerEvent: {}
+[25.599512] (-) TimerEvent: {}
+[25.630903] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'running egg_info\n'}
+[25.631236] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'creating ros2_demo_custommsg_pub.egg-info\n'}
+[25.631605] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'writing ros2_demo_custommsg_pub.egg-info/PKG-INFO\n'}
+[25.632040] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'writing dependency_links to ros2_demo_custommsg_pub.egg-info/dependency_links.txt\n'}
+[25.632324] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'writing entry points to ros2_demo_custommsg_pub.egg-info/entry_points.txt\n'}
+[25.632622] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'writing requirements to ros2_demo_custommsg_pub.egg-info/requires.txt\n'}
+[25.632835] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'writing top-level names to ros2_demo_custommsg_pub.egg-info/top_level.txt\n'}
+[25.633215] (ros2_demo_custommsg_pub) StdoutLine: {'line': b"writing manifest file 'ros2_demo_custommsg_pub.egg-info/SOURCES.txt'\n"}
+[25.668309] (ros2_demo_custommsg_pub) StdoutLine: {'line': b"reading manifest file 'ros2_demo_custommsg_pub.egg-info/SOURCES.txt'\n"}
+[25.669529] (ros2_demo_custommsg_pub) StdoutLine: {'line': b"writing manifest file 'ros2_demo_custommsg_pub.egg-info/SOURCES.txt'\n"}
+[25.671254] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'running build_ext\n'}
+[25.671656] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages/ros2-demo-custommsg-pub.egg-link (link to .)\n'}
+[25.672716] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'Installing demo_custommsg_pub script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/ros2_demo_custommsg_pub\n'}
+[25.673171] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'\n'}
+[25.673310] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub\n'}
+[25.673591] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'running install_data\n'}
+[25.673836] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/share/ament_index\n'}
+[25.674075] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/share/ament_index/resource_index\n'}
+[25.674249] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/share/ament_index/resource_index/packages\n'}
+[25.674530] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'copying resource/ros2_demo_custommsg_pub -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/share/ament_index/resource_index/packages\n'}
+[25.674804] (ros2_demo_custommsg_pub) StdoutLine: {'line': b'copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub\n'}
+[25.703316] (ros2_demo_custommsg_pub) CommandEnded: {'returncode': 0}
+[25.703837] (-) TimerEvent: {}
+[25.750076] (ros2_demo_custommsg_pub) JobEnded: {'identifier': 'ros2_demo_custommsg_pub', 'rc': 0}
+[25.750928] (sensor_fusion_subscriber) JobStarted: {'identifier': 'sensor_fusion_subscriber'}
+[25.804344] (-) TimerEvent: {}
+[25.905151] (-) TimerEvent: {}
+[26.005720] (-) TimerEvent: {}
+[26.106346] (-) TimerEvent: {}
+[26.133496] (sensor_fusion_subscriber) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber', '--editable', '--build-directory', '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber/build', '--no-deps', 'install_data', '--install-dir', '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber'], 'cwd': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kenneth', 'LC_TIME': 'de_BE.UTF-8', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '1150', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib', 'SHLVL': '1', 'OLDPWD': '/opt/pycharm-community-2020.1.4/bin', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/kenneth', 'DESKTOP_SESSION': 'ubuntu', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/jetbrains-pycharm-ce.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_BE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8489', 'COLCON_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'kenneth', 'GTK_IM_MODULE': 'ibus', '_': '/home/kenneth/.local/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'kenneth', 'XDG_SESSION_ID': '1', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '1', 'PATH': '/opt/ros/eloquent/bin:/home/kenneth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kenneth-VirtualBox:@/tmp/.ICE-unix/1020,unix/kenneth-VirtualBox:/tmp/.ICE-unix/1020', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_BE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_BE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types:/opt/ros/eloquent', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'de_BE.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_BE.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_BE.UTF-8', 'XDG_VTNR': '1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'de_BE.UTF-8', 'PYTHONPATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages', 'LC_PAPER': 'de_BE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types'}, 'shell': False}
+[26.206838] (-) TimerEvent: {}
+[26.307338] (-) TimerEvent: {}
+[26.407926] (-) TimerEvent: {}
+[26.508463] (-) TimerEvent: {}
+[26.520753] (sensor_fusion_subscriber) StdoutLine: {'line': b'running develop\n'}
+[26.609030] (-) TimerEvent: {}
+[26.690375] (sensor_fusion_subscriber) StdoutLine: {'line': b'running egg_info\n'}
+[26.690850] (sensor_fusion_subscriber) StdoutLine: {'line': b'creating sensor_fusion_subscriber.egg-info\n'}
+[26.691314] (sensor_fusion_subscriber) StdoutLine: {'line': b'writing sensor_fusion_subscriber.egg-info/PKG-INFO\n'}
+[26.692097] (sensor_fusion_subscriber) StdoutLine: {'line': b'writing dependency_links to sensor_fusion_subscriber.egg-info/dependency_links.txt\n'}
+[26.692551] (sensor_fusion_subscriber) StdoutLine: {'line': b'writing entry points to sensor_fusion_subscriber.egg-info/entry_points.txt\n'}
+[26.692918] (sensor_fusion_subscriber) StdoutLine: {'line': b'writing requirements to sensor_fusion_subscriber.egg-info/requires.txt\n'}
+[26.693263] (sensor_fusion_subscriber) StdoutLine: {'line': b'writing top-level names to sensor_fusion_subscriber.egg-info/top_level.txt\n'}
+[26.694151] (sensor_fusion_subscriber) StdoutLine: {'line': b"writing manifest file 'sensor_fusion_subscriber.egg-info/SOURCES.txt'\n"}
+[26.709350] (-) TimerEvent: {}
+[26.764173] (sensor_fusion_subscriber) StdoutLine: {'line': b"reading manifest file 'sensor_fusion_subscriber.egg-info/SOURCES.txt'\n"}
+[26.765313] (sensor_fusion_subscriber) StdoutLine: {'line': b"writing manifest file 'sensor_fusion_subscriber.egg-info/SOURCES.txt'\n"}
+[26.766963] (sensor_fusion_subscriber) StdoutLine: {'line': b'running build_ext\n'}
+[26.767377] (sensor_fusion_subscriber) StdoutLine: {'line': b'Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/python3.6/site-packages/sensor-fusion-subscriber.egg-link (link to .)\n'}
+[26.768550] (sensor_fusion_subscriber) StdoutLine: {'line': b'Installing sensor_fusion_subscriber script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/sensor_fusion_subscriber\n'}
+[26.768950] (sensor_fusion_subscriber) StdoutLine: {'line': b'\n'}
+[26.769157] (sensor_fusion_subscriber) StdoutLine: {'line': b'Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber\n'}
+[26.769364] (sensor_fusion_subscriber) StdoutLine: {'line': b'running install_data\n'}
+[26.769678] (sensor_fusion_subscriber) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/share/ament_index\n'}
+[26.769868] (sensor_fusion_subscriber) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/share/ament_index/resource_index\n'}
+[26.770108] (sensor_fusion_subscriber) StdoutLine: {'line': b'creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/share/ament_index/resource_index/packages\n'}
+[26.770329] (sensor_fusion_subscriber) StdoutLine: {'line': b'copying resource/sensor_fusion_subscriber -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/share/ament_index/resource_index/packages\n'}
+[26.770651] (sensor_fusion_subscriber) StdoutLine: {'line': b'copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber\n'}
+[26.809120] (sensor_fusion_subscriber) CommandEnded: {'returncode': 0}
+[26.810239] (-) TimerEvent: {}
+[26.861224] (sensor_fusion_subscriber) JobEnded: {'identifier': 'sensor_fusion_subscriber', 'rc': 0}
+[26.862741] (-) EventReactorShutdown: {}
