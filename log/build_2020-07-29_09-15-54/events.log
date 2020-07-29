@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.000211] (-) JobUnselected: {'identifier': 'ros2_demo_custommsg_create'}
+[0.000246] (-) JobUnselected: {'identifier': 'ros2_demo_custommsg_pub'}
+[0.000268] (-) JobUnselected: {'identifier': 'ros2_demo_publisher'}
+[0.000287] (-) JobUnselected: {'identifier': 'ros2_demo_subscriber'}
+[0.000305] (-) JobUnselected: {'identifier': 'sensor_fusion_msg_types'}
+[0.000430] (-) JobUnselected: {'identifier': 'sensor_fusion_msgs'}
+[0.000457] (-) JobUnselected: {'identifier': 'sensor_fusion_subscriber'}
+[0.000476] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+-- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+CMake Error at CMakeLists.txt:29 (find_package):
+  By not providing "Findsensor_fusion_msg_types.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "sensor_fusion_msg_types", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "sensor_fusion_msg_types" with any of the following names:
+
+    sensor_fusion_msg_typesConfig.cmake
+    sensor_fusion_msg_types-config.cmake
+
+  Add the installation prefix of "sensor_fusion_msg_types" to
+  CMAKE_PREFIX_PATH or set "sensor_fusion_msg_types_DIR" to a directory
+  containing one of the above files.  If "sensor_fusion_msg_types" provides a
+  separate development package or SDK, be sure it has been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeOutput.log".
+See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeError.log".

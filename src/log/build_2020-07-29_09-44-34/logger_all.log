@@ -1,0 +1,444 @@
+[0.834s] DEBUG:colcon:Command line arguments: ['/home/kenneth/.local/bin/colcon', 'build', '--symlink-install']
+[0.834s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f67de8fa518>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=1, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f67de8fa518>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f67de8fa828>)
+[0.872s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.873s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kenneth/PycharmProjects/ros2_ws_fix/src'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extensions ['ignore', 'ignore_ament_install']
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extension 'ignore'
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extension 'ignore_ament_install'
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extensions ['colcon_pkg']
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extension 'colcon_pkg'
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extensions ['colcon_meta']
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extension 'colcon_meta'
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extensions ['ros']
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_create) by extension 'ros'
+[0.895s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_demo_custommsg_create' with type 'ros.ament_cmake' and name 'ros2_demo_custommsg_create'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extension 'ignore'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extension 'ignore_ament_install'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extensions ['colcon_pkg']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extension 'colcon_pkg'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extensions ['colcon_meta']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extension 'colcon_meta'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extensions ['ros']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_custommsg_pub) by extension 'ros'
+[0.896s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_demo_custommsg_pub' with type 'ros.ament_python' and name 'ros2_demo_custommsg_pub'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extension 'ignore'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extension 'ignore_ament_install'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extensions ['colcon_pkg']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extension 'colcon_pkg'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extensions ['colcon_meta']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extension 'colcon_meta'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extensions ['ros']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_publisher) by extension 'ros'
+[0.897s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_demo_publisher' with type 'ros.ament_python' and name 'ros2_demo_publisher'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extension 'ignore'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extension 'ignore_ament_install'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extensions ['colcon_pkg']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extension 'colcon_pkg'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extensions ['colcon_meta']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extension 'colcon_meta'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extensions ['ros']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_demo_subscriber) by extension 'ros'
+[0.899s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_demo_subscriber' with type 'ros.ament_python' and name 'ros2_demo_subscriber'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extensions ['ignore', 'ignore_ament_install']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extension 'ignore'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extension 'ignore_ament_install'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extensions ['colcon_pkg']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extension 'colcon_pkg'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extensions ['colcon_meta']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extension 'colcon_meta'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extensions ['ros']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msg_types) by extension 'ros'
+[0.900s] DEBUG:colcon.colcon_core.package_identification:Package 'sensor_fusion_msg_types' with type 'ros.ament_cmake' and name 'sensor_fusion_msg_types'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extension 'ignore'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extension 'ignore_ament_install'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extensions ['colcon_pkg']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extension 'colcon_pkg'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extensions ['colcon_meta']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extension 'colcon_meta'
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extensions ['ros']
+[0.901s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_msgs) by extension 'ros'
+[0.901s] DEBUG:colcon.colcon_core.package_identification:Package 'sensor_fusion_msgs' with type 'ros.ament_cmake' and name 'sensor_fusion_msgs'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extension 'ignore'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extension 'ignore_ament_install'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extensions ['colcon_pkg']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extension 'colcon_pkg'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extensions ['colcon_meta']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extension 'colcon_meta'
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extensions ['ros']
+[0.902s] Level 1:colcon.colcon_core.package_identification:_identify(sensor_fusion_subscriber) by extension 'ros'
+[0.903s] DEBUG:colcon.colcon_core.package_identification:Package 'sensor_fusion_subscriber' with type 'ros.ament_python' and name 'sensor_fusion_subscriber'
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'cmake_target' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'cmake_clean_cache' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'cmake_clean_first' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'cmake_force_configure' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'ament_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'catkin_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_create' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.937s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_demo_custommsg_create' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create', 'symlink_install': True, 'test_result_base': None}
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'cmake_args' from command line to 'None'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'cmake_target' from command line to 'None'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.949s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.949s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_demo_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_publisher', 'symlink_install': True, 'test_result_base': None}
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.961s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.961s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_demo_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_subscriber', 'symlink_install': True, 'test_result_base': None}
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'cmake_args' from command line to 'None'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'cmake_target' from command line to 'None'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'cmake_clean_cache' from command line to 'False'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'cmake_clean_first' from command line to 'False'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'cmake_force_configure' from command line to 'False'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'ament_cmake_args' from command line to 'None'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'catkin_cmake_args' from command line to 'None'
+[0.973s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msg_types' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.973s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_fusion_msg_types' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msg_types', 'symlink_install': True, 'test_result_base': None}
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'cmake_target' from command line to 'None'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.988s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.988s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_fusion_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'cmake_args' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'cmake_target' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'cmake_clean_first' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'cmake_force_configure' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'ament_cmake_args' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_demo_custommsg_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.000s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_demo_custommsg_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_pub', 'symlink_install': True, 'test_result_base': None}
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'cmake_args' from command line to 'None'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'cmake_target' from command line to 'None'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[1.013s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.013s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_fusion_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_subscriber', 'symlink_install': True, 'test_result_base': None}
+[1.016s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.037s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.037s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs' with build type 'ament_cmake'
+[1.059s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.059s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs'
+[1.072s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.072s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.086s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[1.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs -- -j1 -l1
+[1.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs -- -j1 -l1
+[1.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs --target install -- -j1 -l1
+[2.274s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_fusion_msgs)
+[2.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs --target install -- -j1 -l1
+[2.287s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs' for CMake module files
+[2.288s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs' for CMake config files
+[2.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_msgs', 'cmake_prefix_path')
+[2.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/cmake_prefix_path.ps1'
+[2.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/cmake_prefix_path.dsv'
+[2.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/cmake_prefix_path.sh'
+[2.301s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib'
+[2.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_msgs', 'ld_library_path_lib')
+[2.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/ld_library_path_lib.ps1'
+[2.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/ld_library_path_lib.dsv'
+[2.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/ld_library_path_lib.sh'
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/bin'
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/pkgconfig/sensor_fusion_msgs.pc'
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages'
+[2.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_msgs', 'pythonpath')
+[2.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/pythonpath.ps1'
+[2.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/pythonpath.dsv'
+[2.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/hook/pythonpath.sh'
+[2.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.ps1'
+[2.333s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.dsv'
+[2.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.sh'
+[2.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.bash'
+[2.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.zsh'
+[2.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/colcon-core/packages/sensor_fusion_msgs)
+[2.338s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create' with build type 'ament_cmake'
+[2.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create'
+[2.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.388s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[2.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create
+[6.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create
+[6.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create -- -j1 -l1
+[14.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create -- -j1 -l1
+[14.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create --target install -- -j1 -l1
+[15.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_demo_custommsg_create)
+[15.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_create --target install -- -j1 -l1
+[15.769s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create' for CMake module files
+[15.770s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create' for CMake config files
+[15.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_custommsg_create', 'cmake_prefix_path')
+[15.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/cmake_prefix_path.ps1'
+[15.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/cmake_prefix_path.dsv'
+[15.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/cmake_prefix_path.sh'
+[15.793s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/lib'
+[15.793s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_custommsg_create', 'ld_library_path_lib')
+[15.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/ld_library_path_lib.ps1'
+[15.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/ld_library_path_lib.dsv'
+[15.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/ld_library_path_lib.sh'
+[15.809s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/bin'
+[15.809s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/lib/pkgconfig/ros2_demo_custommsg_create.pc'
+[15.809s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/lib/python3.6/site-packages'
+[15.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_custommsg_create', 'pythonpath')
+[15.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/pythonpath.ps1'
+[15.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/pythonpath.dsv'
+[15.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/hook/pythonpath.sh'
+[15.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.ps1'
+[15.834s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.dsv'
+[15.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.sh'
+[15.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.bash'
+[15.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/ros2_demo_custommsg_create/package.zsh'
+[15.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_create/share/colcon-core/packages/ros2_demo_custommsg_create)
+[15.839s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_publisher' with build type 'ament_python'
+[15.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_publisher', 'ament_prefix_path')
+[15.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/hook/ament_prefix_path.ps1'
+[15.869s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/hook/ament_prefix_path.dsv'
+[15.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/hook/ament_prefix_path.sh'
+[15.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.913s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[16.267s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_publisher'
+[16.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.287s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[16.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher
+[16.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_publisher', 'pythonpath_develop')
+[16.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher
+[16.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher/share/ros2_demo_publisher/hook/pythonpath_develop.ps1'
+[16.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher/share/ros2_demo_publisher/hook/pythonpath_develop.dsv'
+[16.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_publisher/share/ros2_demo_publisher/hook/pythonpath_develop.sh'
+[17.009s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher' for CMake module files
+[17.009s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher' for CMake config files
+[17.010s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/lib'
+[17.010s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/bin'
+[17.011s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/lib/pkgconfig/ros2_demo_publisher.pc'
+[17.011s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/lib/python3.6/site-packages'
+[17.011s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_publisher', 'pythonpath')
+[17.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/hook/pythonpath.ps1'
+[17.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/hook/pythonpath.dsv'
+[17.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/hook/pythonpath.sh'
+[17.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_demo_publisher)
+[17.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/package.ps1'
+[17.035s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/package.dsv'
+[17.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/package.sh'
+[17.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/package.bash'
+[17.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/ros2_demo_publisher/package.zsh'
+[17.037s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_publisher/share/colcon-core/packages/ros2_demo_publisher)
+[17.039s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_subscriber' with build type 'ament_python'
+[17.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_subscriber', 'ament_prefix_path')
+[17.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/ament_prefix_path.ps1'
+[17.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/ament_prefix_path.dsv'
+[17.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/ament_prefix_path.sh'
+[17.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.085s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.096s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[17.491s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_subscriber'
+[17.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.501s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.518s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[17.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber
+[18.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_subscriber', 'pythonpath_develop')
+[18.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber
+[18.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/pythonpath_develop.ps1'
+[18.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/pythonpath_develop.dsv'
+[18.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/pythonpath_develop.sh'
+[18.266s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber' for CMake module files
+[18.267s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber' for CMake config files
+[18.268s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/lib'
+[18.268s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/bin'
+[18.269s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/lib/pkgconfig/ros2_demo_subscriber.pc'
+[18.269s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/lib/python3.6/site-packages'
+[18.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_subscriber', 'pythonpath')
+[18.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/pythonpath.ps1'
+[18.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/pythonpath.dsv'
+[18.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/hook/pythonpath.sh'
+[18.283s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_demo_subscriber)
+[18.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/package.ps1'
+[18.297s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/package.dsv'
+[18.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/package.sh'
+[18.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/package.bash'
+[18.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/ros2_demo_subscriber/package.zsh'
+[18.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_subscriber/share/colcon-core/packages/ros2_demo_subscriber)
+[18.300s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msg_types' with build type 'ament_cmake'
+[18.312s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msg_types'
+[18.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.344s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[18.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msg_types -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types
+[22.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msg_types -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types
+[22.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types -- -j1 -l1
+[30.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types -- -j1 -l1
+[31.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types --target install -- -j1 -l1
+[32.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_fusion_msg_types)
+[32.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types --target install -- -j1 -l1
+[32.692s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types' for CMake module files
+[32.692s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types' for CMake config files
+[32.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_msg_types', 'cmake_prefix_path')
+[32.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/cmake_prefix_path.ps1'
+[32.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/cmake_prefix_path.dsv'
+[32.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/cmake_prefix_path.sh'
+[32.706s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/lib'
+[32.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_msg_types', 'ld_library_path_lib')
+[32.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/ld_library_path_lib.ps1'
+[32.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/ld_library_path_lib.dsv'
+[32.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/ld_library_path_lib.sh'
+[32.726s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/bin'
+[32.726s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/lib/pkgconfig/sensor_fusion_msg_types.pc'
+[32.726s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/lib/python3.6/site-packages'
+[32.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_msg_types', 'pythonpath')
+[32.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/pythonpath.ps1'
+[32.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/pythonpath.dsv'
+[32.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/hook/pythonpath.sh'
+[32.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.ps1'
+[32.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.dsv'
+[32.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.sh'
+[32.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.bash'
+[32.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/package.zsh'
+[32.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msg_types/share/colcon-core/packages/sensor_fusion_msg_types)
+[32.775s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_pub' with build type 'ament_python'
+[32.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_custommsg_pub', 'ament_prefix_path')
+[32.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/ament_prefix_path.ps1'
+[32.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/ament_prefix_path.dsv'
+[32.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/ament_prefix_path.sh'
+[32.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.809s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[33.276s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_pub'
+[33.287s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[33.287s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.297s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[33.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub
+[34.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_custommsg_pub', 'pythonpath_develop')
+[34.090s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub' returned '0': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub
+[34.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/pythonpath_develop.ps1'
+[34.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/pythonpath_develop.dsv'
+[34.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/pythonpath_develop.sh'
+[34.110s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub' for CMake module files
+[34.111s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub' for CMake config files
+[34.112s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/lib'
+[34.112s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/bin'
+[34.112s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/lib/pkgconfig/ros2_demo_custommsg_pub.pc'
+[34.112s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages'
+[34.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_demo_custommsg_pub', 'pythonpath')
+[34.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/pythonpath.ps1'
+[34.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/pythonpath.dsv'
+[34.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/hook/pythonpath.sh'
+[34.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_demo_custommsg_pub)
+[34.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/package.ps1'
+[34.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/package.dsv'
+[34.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/package.sh'
+[34.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/package.bash'
+[34.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/ros2_demo_custommsg_pub/package.zsh'
+[34.152s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/ros2_demo_custommsg_pub/share/colcon-core/packages/ros2_demo_custommsg_pub)
+[34.153s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_subscriber' with build type 'ament_python'
+[34.156s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_subscriber', 'ament_prefix_path')
+[34.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/ament_prefix_path.ps1'
+[34.178s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/ament_prefix_path.dsv'
+[34.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/ament_prefix_path.sh'
+[34.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[34.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[34.219s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[34.670s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_subscriber'
+[34.682s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[34.682s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[34.692s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[34.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber
+[35.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_subscriber', 'pythonpath_develop')
+[35.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber' returned '0': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber
+[35.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/pythonpath_develop.ps1'
+[35.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/pythonpath_develop.dsv'
+[35.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/pythonpath_develop.sh'
+[35.545s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber' for CMake module files
+[35.546s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber' for CMake config files
+[35.547s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib'
+[35.548s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/bin'
+[35.548s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/pkgconfig/sensor_fusion_subscriber.pc'
+[35.548s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/python3.6/site-packages'
+[35.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion_subscriber', 'pythonpath')
+[35.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/pythonpath.ps1'
+[35.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/pythonpath.dsv'
+[35.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/hook/pythonpath.sh'
+[35.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_fusion_subscriber)
+[35.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/package.ps1'
+[35.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/package.dsv'
+[35.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/package.sh'
+[35.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/package.bash'
+[35.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber/package.zsh'
+[35.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/colcon-core/packages/sensor_fusion_subscriber)
+[35.600s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[35.603s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[35.604s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[35.604s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[35.640s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[35.640s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[35.641s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[35.650s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[35.666s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/local_setup.ps1'
+[35.672s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/_local_setup_util_ps1.py'
+[35.679s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/setup.ps1'
+[35.697s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/local_setup.sh'
+[35.698s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/_local_setup_util_sh.py'
+[35.699s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/setup.sh'
+[35.721s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/local_setup.bash'
+[35.724s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/setup.bash'
+[35.742s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/local_setup.zsh'
+[35.742s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/setup.zsh'

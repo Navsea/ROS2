@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/ros2_demo_publisher
+ros2_demo_publisher/__init__.py
+ros2_demo_publisher/demo_publisher.py
+ros2_demo_publisher.egg-info/PKG-INFO
+ros2_demo_publisher.egg-info/SOURCES.txt
+ros2_demo_publisher.egg-info/dependency_links.txt
+ros2_demo_publisher.egg-info/entry_points.txt
+ros2_demo_publisher.egg-info/requires.txt
+ros2_demo_publisher.egg-info/top_level.txt
+ros2_demo_publisher.egg-info/zip-safe

@@ -1,0 +1,24 @@
+[0.549s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber
+[1.011s] running develop
+[1.250s] running egg_info
+[1.251s] creating sensor_fusion_subscriber.egg-info
+[1.251s] writing sensor_fusion_subscriber.egg-info/PKG-INFO
+[1.252s] writing dependency_links to sensor_fusion_subscriber.egg-info/dependency_links.txt
+[1.252s] writing entry points to sensor_fusion_subscriber.egg-info/entry_points.txt
+[1.253s] writing requirements to sensor_fusion_subscriber.egg-info/requires.txt
+[1.253s] writing top-level names to sensor_fusion_subscriber.egg-info/top_level.txt
+[1.254s] writing manifest file 'sensor_fusion_subscriber.egg-info/SOURCES.txt'
+[1.302s] reading manifest file 'sensor_fusion_subscriber.egg-info/SOURCES.txt'
+[1.306s] writing manifest file 'sensor_fusion_subscriber.egg-info/SOURCES.txt'
+[1.313s] running build_ext
+[1.314s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/python3.6/site-packages/sensor-fusion-subscriber.egg-link (link to .)
+[1.316s] Installing sensor_fusion_subscriber script to /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/sensor_fusion_subscriber
+[1.321s] 
+[1.321s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber
+[1.321s] running install_data
+[1.322s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/ament_index
+[1.322s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/ament_index/resource_index
+[1.322s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/ament_index/resource_index/packages
+[1.323s] copying resource/sensor_fusion_subscriber -> /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/ament_index/resource_index/packages
+[1.323s] copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/share/sensor_fusion_subscriber
+[1.368s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber' returned '0': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_subscriber

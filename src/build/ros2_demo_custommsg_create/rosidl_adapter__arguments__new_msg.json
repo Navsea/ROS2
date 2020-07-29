@@ -1,0 +1,6 @@
+{
+  "package_name": "ros2_demo_custommsg_create",
+  "non_idl_tuples": [
+    "/home/kenneth/PycharmProjects/ros2_ws_fix/src/ros2_demo_custommsg_create:msg/Custom.msg"
+  ]
+}

@@ -1,0 +1,29 @@
+[0.045s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs
+[0.062s] CMake Error at CMakeLists.txt:42:
+[0.062s]   Parse error.  Function missing ending ")".  Instead found unterminated
+[0.062s]   string with text "DEPENDENCIES builtin_interfaces sensor_fusion_msg_types
+[0.062s] 
+[0.062s]    )
+[0.062s] 
+[0.063s]   
+[0.063s] 
+[0.063s]   if(BUILD_TESTING)
+[0.063s] 
+[0.063s]     find_package(ament_lint_auto REQUIRED)
+[0.063s]     # the following line skips the linter which checks for copyrights
+[0.064s]     # uncomment the line when a copyright and license is not present in all source files
+[0.064s]     #set(ament_cmake_copyright_FOUND TRUE)
+[0.064s]     # the following line skips cpplint (only works in a git repo)
+[0.064s]     # uncomment the line when this package is not in a git repo
+[0.064s]     #set(ament_cmake_cpplint_FOUND TRUE)
+[0.064s]     ament_lint_auto_find_test_dependencies()
+[0.064s] 
+[0.065s]   endif()
+[0.065s] 
+[0.065s]   
+[0.065s] 
+[0.065s]   ament_package()".
+[0.065s] 
+[0.065s] 
+[0.066s] -- Configuring incomplete, errors occurred!
+[0.069s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs

@@ -1,0 +1,1 @@
+/home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msg_types/rosidl_generator_cpp/sensor_fusion_msg_types/msg/vinerow__struct.hpp

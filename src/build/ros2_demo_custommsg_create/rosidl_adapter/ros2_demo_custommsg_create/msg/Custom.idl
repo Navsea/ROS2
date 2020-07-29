@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros2_demo_custommsg_create/msg/Custom.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module ros2_demo_custommsg_create {
+  module msg {
+    typedef double double__7[7];
+    struct Custom {
+      geometry_msgs::msg::Vector3 dir;
+
+      geometry_msgs::msg::Point center;
+
+      double dist;
+
+      double__7 var;
+
+      boolean is_valid;
+    };
+  };
+};

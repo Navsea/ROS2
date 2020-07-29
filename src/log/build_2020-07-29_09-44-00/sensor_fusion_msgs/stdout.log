@@ -1,0 +1,149 @@
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found sensor_fusion_msg_types: 0.0.0 (/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/share/sensor_fusion_msg_types/cmake)
+-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kenneth/PycharmProjects/ros2_ws_fix/src/build/sensor_fusion_msgs
+[35m[1mScanning dependencies of target sensor_fusion_msgs__cpp[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] Built target sensor_fusion_msgs__cpp
+[  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sensor_fusion_msgs/msg/dds_fastrtps/vinerows__type_support.cpp.o[0m
+[ 13%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 13%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp
+[ 17%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_generator_c[0m
+[ 20%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_generator_c.dir/rosidl_generator_c/sensor_fusion_msgs/msg/vinerows__functions.c.o[0m
+[ 24%] [32m[1mLinking C shared library libsensor_fusion_msgs__rosidl_generator_c.so[0m
+[ 24%] Built target sensor_fusion_msgs__rosidl_generator_c
+[ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sensor_fusion_msgs/msg/vinerows__type_support_c.cpp.o[0m
+[ 34%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 34%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c
+[ 37%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_c[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o[0m
+[ 44%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_c.so[0m
+[ 44%] Built target sensor_fusion_msgs__rosidl_typesupport_c
+[ 48%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_cpp[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_cpp.so[0m
+[ 55%] Built target sensor_fusion_msgs__rosidl_typesupport_cpp
+[ 58%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_introspection_c[0m
+[ 62%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sensor_fusion_msgs/msg/vinerows__type_support.c.o[0m
+[ 65%] [32m[1mLinking C shared library libsensor_fusion_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 65%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_c
+[ 68%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 75%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp
+[35m[1mScanning dependencies of target sensor_fusion_msgs[0m
+[ 75%] Built target sensor_fusion_msgs
+[35m[1mScanning dependencies of target sensor_fusion_msgs__py[0m
+[ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 79%] Built target sensor_fusion_msgs__py
+[35m[1mScanning dependencies of target sensor_fusion_msgs__python[0m
+[ 82%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__python.dir/rosidl_generator_py/sensor_fusion_msgs/msg/_vinerows_s.c.o[0m
+[ 86%] [32m[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/libsensor_fusion_msgs__python.so[0m
+[ 86%] Built target sensor_fusion_msgs__python
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_c__pyext[0m
+[ 89%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 93%] [32m[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[ 93%] Built target sensor_fusion_msgs__rosidl_typesupport_c__pyext
+[35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 96%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[100%] [32m[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[100%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[  3%] Built target sensor_fusion_msgs__cpp
+[ 13%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp
+[ 24%] Built target sensor_fusion_msgs__rosidl_generator_c
+[ 34%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c
+[ 44%] Built target sensor_fusion_msgs__rosidl_typesupport_c
+[ 55%] Built target sensor_fusion_msgs__rosidl_typesupport_cpp
+[ 65%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_c
+[ 75%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp
+[ 75%] Built target sensor_fusion_msgs
+[ 79%] Built target sensor_fusion_msgs__py
+[ 86%] Built target sensor_fusion_msgs__python
+[ 93%] Built target sensor_fusion_msgs__rosidl_typesupport_c__pyext
+[100%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/ament_index/resource_index/rosidl_interfaces/sensor_fusion_msgs
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows.hpp
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__struct.hpp
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__traits.hpp
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__functions.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__struct.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__type_support.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/library_path.sh
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/library_path.dsv
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_generator_c.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_c.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_cpp.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_introspection_cpp.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/pythonpath.sh
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/pythonpath.dsv
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/__init__.py
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/msg/__init__.py
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/msg/_vinerows.py
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__python.so
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/msg/Vinerows.idl
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/msg/Vinerows.msg
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/ament_index/resource_index/package_run_dependencies/sensor_fusion_msgs
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/ament_index/resource_index/parent_prefix_path/sensor_fusion_msgs
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/ament_prefix_path.sh
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/path.sh
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/path.dsv
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.bash
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.sh
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.zsh
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.dsv
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.dsv
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/ament_index/resource_index/packages/sensor_fusion_msgs
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/sensor_fusion_msgsConfig.cmake
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/sensor_fusion_msgsConfig-version.cmake
+-- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.xml
+Compiling '/home/kenneth/PycharmProjects/ros2_ws_fix/src/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/__init__.py'...

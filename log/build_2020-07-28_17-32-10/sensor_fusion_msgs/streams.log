@@ -1,0 +1,58 @@
+[0.071s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs
+[0.192s] -- The C compiler identification is GNU 7.5.0
+[0.306s] -- The CXX compiler identification is GNU 7.5.0
+[0.316s] -- Check for working C compiler: /usr/bin/cc
+[0.485s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.485s] -- Detecting C compiler ABI info
+[0.637s] -- Detecting C compiler ABI info - done
+[0.649s] -- Detecting C compile features
+[1.108s] -- Detecting C compile features - done
+[1.114s] -- Check for working CXX compiler: /usr/bin/c++
+[1.280s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.281s] -- Detecting CXX compiler ABI info
+[1.395s] -- Detecting CXX compiler ABI info - done
+[1.401s] -- Detecting CXX compile features
+[1.813s] -- Detecting CXX compile features - done
+[1.816s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[1.859s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.859s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.100s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.129s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[2.234s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[2.256s] -- Found FastRTPS: /opt/ros/eloquent/include  
+[2.275s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[2.371s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[2.403s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[2.404s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.406s] -- Looking for pthread.h
+[2.508s] -- Looking for pthread.h - found
+[2.509s] -- Looking for pthread_create
+[2.612s] -- Looking for pthread_create - not found
+[2.613s] -- Looking for pthread_create in pthreads
+[2.709s] -- Looking for pthread_create in pthreads - not found
+[2.709s] -- Looking for pthread_create in pthread
+[2.793s] -- Looking for pthread_create in pthread - found
+[2.795s] -- Found Threads: TRUE  
+[2.844s] -- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+[2.856s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[2.878s] CMake Error at CMakeLists.txt:29 (find_package):
+[2.878s]   By not providing "Findsensor_fusion_msg_types.cmake" in CMAKE_MODULE_PATH
+[2.879s]   this project has asked CMake to find a package configuration file provided
+[2.879s]   by "sensor_fusion_msg_types", but CMake did not find one.
+[2.879s] 
+[2.879s]   Could not find a package configuration file provided by
+[2.880s]   "sensor_fusion_msg_types" with any of the following names:
+[2.880s] 
+[2.880s]     sensor_fusion_msg_typesConfig.cmake
+[2.881s]     sensor_fusion_msg_types-config.cmake
+[2.881s] 
+[2.881s]   Add the installation prefix of "sensor_fusion_msg_types" to
+[2.881s]   CMAKE_PREFIX_PATH or set "sensor_fusion_msg_types_DIR" to a directory
+[2.884s]   containing one of the above files.  If "sensor_fusion_msg_types" provides a
+[2.885s]   separate development package or SDK, be sure it has been installed.
+[2.885s] 
+[2.885s] 
+[2.885s] -- Configuring incomplete, errors occurred!
+[2.886s] See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeOutput.log".
+[2.886s] See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeError.log".
+[2.892s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/kenneth/PycharmProjects/ros2_ws_fix/src/sensor_fusion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs

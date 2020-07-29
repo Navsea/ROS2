@@ -1,0 +1,17 @@
+CMake Error at CMakeLists.txt:29 (find_package):
+  By not providing "Findsensor_fusion_msg_types.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "sensor_fusion_msg_types", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "sensor_fusion_msg_types" with any of the following names:
+
+    sensor_fusion_msg_typesConfig.cmake
+    sensor_fusion_msg_types-config.cmake
+
+  Add the installation prefix of "sensor_fusion_msg_types" to
+  CMAKE_PREFIX_PATH or set "sensor_fusion_msg_types_DIR" to a directory
+  containing one of the above files.  If "sensor_fusion_msg_types" provides a
+  separate development package or SDK, be sure it has been installed.
+
+
