@@ -13,9 +13,9 @@
 
 
 // Include directives for member types
-// Member `dir`
+// Member `direction`
 #include "geometry_msgs/msg/vector3.h"
-// Member `dir`
+// Member `direction`
 #include "geometry_msgs/msg/vector3__rosidl_typesupport_introspection_c.h"
 // Member `center`
 #include "geometry_msgs/msg/point.h"
@@ -43,14 +43,14 @@ void Vinerow__rosidl_typesupport_introspection_c__Vinerow_fini_function(void * m
 
 static rosidl_typesupport_introspection_c__MessageMember Vinerow__rosidl_typesupport_introspection_c__Vinerow_message_member_array[5] = {
   {
-    "dir",  // name
+    "direction",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(sensor_fusion_msg_types__msg__Vinerow, dir),  // bytes offset in struct
+    offsetof(sensor_fusion_msg_types__msg__Vinerow, direction),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -73,14 +73,14 @@ static rosidl_typesupport_introspection_c__MessageMember Vinerow__rosidl_typesup
     NULL  // resize(index) function pointer
   },
   {
-    "dist",  // name
+    "distance",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(sensor_fusion_msg_types__msg__Vinerow, dist),  // bytes offset in struct
+    offsetof(sensor_fusion_msg_types__msg__Vinerow, distance),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -88,14 +88,14 @@ static rosidl_typesupport_introspection_c__MessageMember Vinerow__rosidl_typesup
     NULL  // resize(index) function pointer
   },
   {
-    "var",  // name
+    "variance",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
     7,  // array size
     false,  // is upper bound
-    offsetof(sensor_fusion_msg_types__msg__Vinerow, var),  // bytes offset in struct
+    offsetof(sensor_fusion_msg_types__msg__Vinerow, variance),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

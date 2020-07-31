@@ -10,7 +10,7 @@
 
 
 // Include directives for member types
-// Member `dir`
+// Member `direction`
 #include "geometry_msgs/msg/vector3__functions.h"
 // Member `center`
 #include "geometry_msgs/msg/point__functions.h"
@@ -21,8 +21,8 @@ sensor_fusion_msg_types__msg__Vinerow__init(sensor_fusion_msg_types__msg__Vinero
   if (!msg) {
     return false;
   }
-  // dir
-  if (!geometry_msgs__msg__Vector3__init(&msg->dir)) {
+  // direction
+  if (!geometry_msgs__msg__Vector3__init(&msg->direction)) {
     sensor_fusion_msg_types__msg__Vinerow__fini(msg);
     return false;
   }
@@ -31,8 +31,8 @@ sensor_fusion_msg_types__msg__Vinerow__init(sensor_fusion_msg_types__msg__Vinero
     sensor_fusion_msg_types__msg__Vinerow__fini(msg);
     return false;
   }
-  // dist
-  // var
+  // distance
+  // variance
   // is_valid
   return true;
 }
@@ -43,12 +43,12 @@ sensor_fusion_msg_types__msg__Vinerow__fini(sensor_fusion_msg_types__msg__Vinero
   if (!msg) {
     return;
   }
-  // dir
-  geometry_msgs__msg__Vector3__fini(&msg->dir);
+  // direction
+  geometry_msgs__msg__Vector3__fini(&msg->direction);
   // center
   geometry_msgs__msg__Point__fini(&msg->center);
-  // dist
-  // var
+  // distance
+  // variance
   // is_valid
 }
 

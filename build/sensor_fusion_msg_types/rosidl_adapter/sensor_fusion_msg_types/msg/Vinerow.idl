@@ -9,13 +9,13 @@ module sensor_fusion_msg_types {
   module msg {
     typedef double double__7[7];
     struct Vinerow {
-      geometry_msgs::msg::Vector3 dir;
+      geometry_msgs::msg::Vector3 direction;
 
       geometry_msgs::msg::Point center;
 
-      double dist;
+      double distance;
 
-      double__7 var;
+      double__7 variance;
 
       boolean is_valid;
     };

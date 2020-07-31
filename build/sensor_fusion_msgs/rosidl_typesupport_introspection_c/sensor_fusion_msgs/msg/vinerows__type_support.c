@@ -13,6 +13,10 @@
 
 
 // Include directives for member types
+// Member `header`
+#include "std_msgs/msg/header.h"
+// Member `header`
+#include "std_msgs/msg/header__rosidl_typesupport_introspection_c.h"
 // Member `vinerows`
 #include "sensor_fusion_msg_types/msg/vinerow.h"
 // Member `vinerows`
@@ -40,48 +44,73 @@ void Vinerows__rosidl_typesupport_introspection_c__Vinerows_fini_function(void *
 size_t Vinerows__rosidl_typesupport_introspection_c__size_function__Vinerow__vinerows(
   const void * untyped_member)
 {
-  (void)untyped_member;
-  return 7;
+  const sensor_fusion_msg_types__msg__Vinerow__Sequence * member =
+    (const sensor_fusion_msg_types__msg__Vinerow__Sequence *)(untyped_member);
+  return member->size;
 }
 
 const void * Vinerows__rosidl_typesupport_introspection_c__get_const_function__Vinerow__vinerows(
   const void * untyped_member, size_t index)
 {
-  const sensor_fusion_msg_types__msg__Vinerow ** member =
-    (const sensor_fusion_msg_types__msg__Vinerow **)(untyped_member);
-  return &(*member)[index];
+  const sensor_fusion_msg_types__msg__Vinerow__Sequence * member =
+    (const sensor_fusion_msg_types__msg__Vinerow__Sequence *)(untyped_member);
+  return &member->data[index];
 }
 
 void * Vinerows__rosidl_typesupport_introspection_c__get_function__Vinerow__vinerows(
   void * untyped_member, size_t index)
 {
-  sensor_fusion_msg_types__msg__Vinerow ** member =
-    (sensor_fusion_msg_types__msg__Vinerow **)(untyped_member);
-  return &(*member)[index];
+  sensor_fusion_msg_types__msg__Vinerow__Sequence * member =
+    (sensor_fusion_msg_types__msg__Vinerow__Sequence *)(untyped_member);
+  return &member->data[index];
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_member_array[1] = {
+bool Vinerows__rosidl_typesupport_introspection_c__resize_function__Vinerow__vinerows(
+  void * untyped_member, size_t size)
+{
+  sensor_fusion_msg_types__msg__Vinerow__Sequence * member =
+    (sensor_fusion_msg_types__msg__Vinerow__Sequence *)(untyped_member);
+  sensor_fusion_msg_types__msg__Vinerow__Sequence__fini(member);
+  return sensor_fusion_msg_types__msg__Vinerow__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_member_array[2] = {
+  {
+    "header",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(sensor_fusion_msgs__msg__Vinerows, header),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "vinerows",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
     true,  // is array
-    7,  // array size
+    0,  // array size
     false,  // is upper bound
     offsetof(sensor_fusion_msgs__msg__Vinerows, vinerows),  // bytes offset in struct
     NULL,  // default value
     Vinerows__rosidl_typesupport_introspection_c__size_function__Vinerow__vinerows,  // size() function pointer
     Vinerows__rosidl_typesupport_introspection_c__get_const_function__Vinerow__vinerows,  // get_const(index) function pointer
     Vinerows__rosidl_typesupport_introspection_c__get_function__Vinerow__vinerows,  // get(index) function pointer
-    NULL  // resize(index) function pointer
+    Vinerows__rosidl_typesupport_introspection_c__resize_function__Vinerow__vinerows  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_members = {
   "sensor_fusion_msgs__msg",  // message namespace
   "Vinerows",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(sensor_fusion_msgs__msg__Vinerows),
   Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_member_array,  // message members
   Vinerows__rosidl_typesupport_introspection_c__Vinerows_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -100,6 +129,8 @@ ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_sensor_fusion_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, sensor_fusion_msgs, msg, Vinerows)() {
   Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
+  Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, sensor_fusion_msg_types, msg, Vinerow)();
   if (!Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_type_support_handle.typesupport_identifier) {
     Vinerows__rosidl_typesupport_introspection_c__Vinerows_message_type_support_handle.typesupport_identifier =

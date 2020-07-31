@@ -28,8 +28,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'sensor_fusion_subscriber ='
-            ' sensor_fusion_subscriber.sensor_fusion_subscriber:main',
+            'sf_ros2_vinerow_sub ='
+            ' sf_ros2_vinerow_sub.sf_ros2_vinerow_sub:main',
         ],
     },
 )

@@ -39,46 +39,68 @@ void Vinerows_fini_function(void * message_memory)
 
 size_t size_function__Vinerows__vinerows(const void * untyped_member)
 {
-  (void)untyped_member;
-  return 7;
+  const auto * member = reinterpret_cast<const std::vector<sensor_fusion_msg_types::msg::Vinerow> *>(untyped_member);
+  return member->size();
 }
 
 const void * get_const_function__Vinerows__vinerows(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::array<sensor_fusion_msg_types::msg::Vinerow, 7> *>(untyped_member);
+    *reinterpret_cast<const std::vector<sensor_fusion_msg_types::msg::Vinerow> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__Vinerows__vinerows(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::array<sensor_fusion_msg_types::msg::Vinerow, 7> *>(untyped_member);
+    *reinterpret_cast<std::vector<sensor_fusion_msg_types::msg::Vinerow> *>(untyped_member);
   return &member[index];
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Vinerows_message_member_array[1] = {
+void resize_function__Vinerows__vinerows(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<sensor_fusion_msg_types::msg::Vinerow> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Vinerows_message_member_array[2] = {
+  {
+    "header",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Header>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(sensor_fusion_msgs::msg::Vinerows, header),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "vinerows",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<sensor_fusion_msg_types::msg::Vinerow>(),  // members of sub message
     true,  // is array
-    7,  // array size
+    0,  // array size
     false,  // is upper bound
     offsetof(sensor_fusion_msgs::msg::Vinerows, vinerows),  // bytes offset in struct
     nullptr,  // default value
     size_function__Vinerows__vinerows,  // size() function pointer
     get_const_function__Vinerows__vinerows,  // get_const(index) function pointer
     get_function__Vinerows__vinerows,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
+    resize_function__Vinerows__vinerows  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Vinerows_message_members = {
   "sensor_fusion_msgs::msg",  // message namespace
   "Vinerows",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(sensor_fusion_msgs::msg::Vinerows),
   Vinerows_message_member_array,  // message members
   Vinerows_init_function,  // function to initialize message memory (memory has to be allocated)

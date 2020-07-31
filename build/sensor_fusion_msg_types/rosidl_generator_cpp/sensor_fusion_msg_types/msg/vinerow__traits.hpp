@@ -11,7 +11,7 @@
 #include <type_traits>
 
 // Include directives for member types
-// Member 'dir'
+// Member 'direction'
 #include "geometry_msgs/msg/vector3__traits.hpp"
 // Member 'center'
 #include "geometry_msgs/msg/point__traits.hpp"

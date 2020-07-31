@@ -4,13 +4,17 @@
 CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_c.c.o
  /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_c.c
  /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/include/sensor_fusion_msg_types/msg/vinerow__struct.h
+ /opt/ros/eloquent/include/builtin_interfaces/msg/time__struct.h
  /opt/ros/eloquent/include/geometry_msgs/msg/point__struct.h
  /opt/ros/eloquent/include/geometry_msgs/msg/vector3__struct.h
  /opt/ros/eloquent/include/rosidl_generator_c/action_type_support_struct.h
  /opt/ros/eloquent/include/rosidl_generator_c/message_type_support_struct.h
+ /opt/ros/eloquent/include/rosidl_generator_c/primitives_sequence.h
  /opt/ros/eloquent/include/rosidl_generator_c/service_type_support_struct.h
+ /opt/ros/eloquent/include/rosidl_generator_c/string.h
  /opt/ros/eloquent/include/rosidl_generator_c/visibility_control.h
  /opt/ros/eloquent/include/rosidl_typesupport_interface/macros.h
+ /opt/ros/eloquent/include/std_msgs/msg/header__struct.h
  /usr/include/python3.6m/Python.h
  /usr/include/python3.6m/abstract.h
  /usr/include/python3.6m/bltinmodule.h

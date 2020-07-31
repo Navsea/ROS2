@@ -15,6 +15,8 @@
 
 
 // Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/header__struct.hpp"
 // Member 'vinerows'
 #include "sensor_fusion_msg_types/msg/vinerow__struct.hpp"
 
@@ -37,32 +39,34 @@ struct Vinerows_
   using Type = Vinerows_<ContainerAllocator>;
 
   explicit Vinerows_(rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
+  : header(_init)
   {
-    if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
-      rosidl_generator_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->vinerows.fill(sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>{_init});
-    }
+    (void)_init;
   }
 
   explicit Vinerows_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
-  : vinerows(_alloc)
+  : header(_alloc, _init)
   {
-    if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
-      rosidl_generator_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->vinerows.fill(sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>{_alloc, _init});
-    }
+    (void)_init;
   }
 
   // field types and members
+  using _header_type =
+    std_msgs::msg::Header_<ContainerAllocator>;
+  _header_type header;
   using _vinerows_type =
-    std::array<sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>, 7>;
+    std::vector<sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>, typename ContainerAllocator::template rebind<sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>>::other>;
   _vinerows_type vinerows;
 
   // setters for named parameter idiom
+  Type & set__header(
+    const std_msgs::msg::Header_<ContainerAllocator> & _arg)
+  {
+    this->header = _arg;
+    return *this;
+  }
   Type & set__vinerows(
-    const std::array<sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>, 7> & _arg)
+    const std::vector<sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>, typename ContainerAllocator::template rebind<sensor_fusion_msg_types::msg::Vinerow_<ContainerAllocator>>::other> & _arg)
   {
     this->vinerows = _arg;
     return *this;
@@ -110,6 +114,9 @@ struct Vinerows_
   // comparison operators
   bool operator==(const Vinerows_ & other) const
   {
+    if (this->header != other.header) {
+      return false;
+    }
     if (this->vinerows != other.vinerows) {
       return false;
     }

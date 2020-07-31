@@ -18,13 +18,16 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/header__struct.h"
 // Member 'vinerows'
 #include "sensor_fusion_msg_types/msg/vinerow__struct.h"
 
 // Struct defined in msg/Vinerows in the package sensor_fusion_msgs.
 typedef struct sensor_fusion_msgs__msg__Vinerows
 {
-  sensor_fusion_msg_types__msg__Vinerow vinerows[7];
+  std_msgs__msg__Header header;
+  sensor_fusion_msg_types__msg__Vinerow__Sequence vinerows;
 } sensor_fusion_msgs__msg__Vinerows;
 
 // Struct for a sequence of sensor_fusion_msgs__msg__Vinerows.

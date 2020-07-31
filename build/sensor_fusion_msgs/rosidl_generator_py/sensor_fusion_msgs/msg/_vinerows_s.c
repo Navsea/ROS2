@@ -23,6 +23,10 @@
 #include "sensor_fusion_msg_types/msg/vinerow__functions.h"
 // end nested array functions include
 ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__header__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__header__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
 bool sensor_fusion_msg_types__msg__vinerow__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * sensor_fusion_msg_types__msg__vinerow__convert_to_py(void * raw_ros_message);
@@ -62,6 +66,17 @@ bool sensor_fusion_msgs__msg__vinerows__convert_from_py(PyObject * _pymsg, void 
         full_classname_dest, 41) == 0);
   }
   sensor_fusion_msgs__msg__Vinerows * ros_message = _ros_message;
+  {  // header
+    PyObject * field = PyObject_GetAttrString(_pymsg, "header");
+    if (!field) {
+      return false;
+    }
+    if (!std_msgs__msg__header__convert_from_py(field, &ros_message->header)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
   {  // vinerows
     PyObject * field = PyObject_GetAttrString(_pymsg, "vinerows");
     if (!field) {
@@ -72,8 +87,19 @@ bool sensor_fusion_msgs__msg__vinerows__convert_from_py(PyObject * _pymsg, void 
       Py_DECREF(field);
       return false;
     }
-    Py_ssize_t size = 7;
-    sensor_fusion_msg_types__msg__Vinerow * dest = ros_message->vinerows;
+    Py_ssize_t size = PySequence_Size(field);
+    if (-1 == size) {
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    if (!sensor_fusion_msg_types__msg__Vinerow__Sequence__init(&(ros_message->vinerows), size)) {
+      PyErr_SetString(PyExc_RuntimeError, "unable to create sensor_fusion_msg_types__msg__Vinerow__Sequence ros_message");
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    sensor_fusion_msg_types__msg__Vinerow * dest = ros_message->vinerows.data;
     for (Py_ssize_t i = 0; i < size; ++i) {
       if (!sensor_fusion_msg_types__msg__vinerow__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
         Py_DECREF(seq_field);
@@ -106,16 +132,30 @@ PyObject * sensor_fusion_msgs__msg__vinerows__convert_to_py(void * raw_ros_messa
     }
   }
   sensor_fusion_msgs__msg__Vinerows * ros_message = (sensor_fusion_msgs__msg__Vinerows *)raw_ros_message;
+  {  // header
+    PyObject * field = NULL;
+    field = std_msgs__msg__header__convert_to_py(&ros_message->header);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "header", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // vinerows
     PyObject * field = NULL;
-    size_t size = 7;
+    size_t size = ros_message->vinerows.size;
     field = PyList_New(size);
     if (!field) {
       return NULL;
     }
     sensor_fusion_msg_types__msg__Vinerow * item;
     for (size_t i = 0; i < size; ++i) {
-      item = &(ros_message->vinerows[i]);
+      item = &(ros_message->vinerows.data[i]);
       PyObject * pyitem = sensor_fusion_msg_types__msg__vinerow__convert_to_py(item);
       if (!pyitem) {
         Py_DECREF(field);

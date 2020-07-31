@@ -11,8 +11,8 @@
 #include <type_traits>
 
 // Include directives for member types
-// Member 'vinerows'
-#include "sensor_fusion_msg_types/msg/vinerow__traits.hpp"
+// Member 'header'
+#include "std_msgs/msg/header__traits.hpp"
 
 namespace rosidl_generator_traits
 {
@@ -25,11 +25,11 @@ inline const char * data_type<sensor_fusion_msgs::msg::Vinerows>()
 
 template<>
 struct has_fixed_size<sensor_fusion_msgs::msg::Vinerows>
-  : std::integral_constant<bool, has_fixed_size<sensor_fusion_msg_types::msg::Vinerow>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<sensor_fusion_msgs::msg::Vinerows>
-  : std::integral_constant<bool, has_bounded_size<sensor_fusion_msg_types::msg::Vinerow>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<sensor_fusion_msgs::msg::Vinerows>

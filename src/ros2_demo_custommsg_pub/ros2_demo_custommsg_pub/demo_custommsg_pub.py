@@ -14,39 +14,64 @@
 
 import rclpy
 from rclpy.node import Node
+from rclpy.time import Time
+from rclpy.clock import ClockType
 
 from std_msgs.msg import String
 from sensor_fusion_msgs.msg import Vinerows
+from sensor_fusion_msg_types.msg import Vinerow
 
 class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(Vinerows, 'sensorFusion', 10)
-        timer_period = 0.5  # seconds
+        timer_period = 1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
     def timer_callback(self):
+        base_msg = Vinerow()
+        base_msg2 = Vinerow()
+
         msg2 = Vinerows()
 
-        msg2.vinerows[0].dir.x = 0.3
-        msg2.vinerows[0].dir.y = 0.3
-        msg2.vinerows[0].dir.z = 0.3
-        msg2.vinerows[0].center.x = 0.10
-        msg2.vinerows[0].center.y = 0.10
-        msg2.vinerows[0].center.z = -1.05
-        msg2.vinerows[0].dist = 20.0
-        msg2.vinerows[0].var = [0.3, 0.3, 0.3, 0.03, 0.03, 0.03, 0.15]
-        msg2.vinerows[0].is_valid = True
+        base_msg.center.x = 0.10
+        base_msg.center.y = 0.10
+        base_msg.center.z = -1.05
+        base_msg.direction.x = 1.
+        base_msg.direction.y = 0.
+        base_msg.direction.z = 0.
+        base_msg.distance = 20.0
+        base_msg.variance = [6.25, 0.0225, 0.0225, 0.0025, 0.0025, 0.0025, 6.25]
+        base_msg.is_valid = True
+
+        base_msg2.center.x = 0.09
+        base_msg2.center.y = 0.65
+        base_msg2.center.z = -1.12
+        base_msg2.direction.x = 1.
+        base_msg2.direction.y = 0.
+        base_msg2.direction.z = 0.
+        base_msg2.distance = 20.0
+        base_msg2.variance = [6.25, 0.0225, 0.0225, 0.0025, 0.0025, 0.0025, 6.25]
+        base_msg2.is_valid = True
+
+        msg2.header.stamp = self.get_clock().now().to_msg()
+        msg2.header.frame_id = str(self.i)
+
+        msg2.vinerows.append(base_msg)
+        msg2.vinerows.append(base_msg2)
+
         self.publisher_.publish(msg2)
 
         for vinerow in msg2.vinerows:
             self.get_logger().info('Vinerow:\n' +
-                        'Direction: {dir_x} {dir_y} {dir_z}\n'.format(dir_x=vinerow.dir.x, dir_y=vinerow.dir.y, dir_z=vinerow.dir.z) +
+                        'Direction: {dir_x} {dir_y} {dir_z}\n'.format(dir_x=vinerow.direction.x, dir_y=vinerow.direction.y, dir_z=vinerow.direction.z) +
                         'Center: {center_x} {center_y} {center_z}\n'.format(center_x=vinerow.center.x, center_y=vinerow.center.y, center_z=vinerow.center.z) +
-                        'Distance: {dist}\n'.format(dist=vinerow.dist) +
-                        'Variance: {var}'.format(var=vinerow.var) if vinerow.is_valid else 'None valid vinerow data')
+                        'Distance: {dist}\n'.format(dist=vinerow.distance) +
+                        'Variance: {var}'.format(var=vinerow.variance)
+                         if vinerow.is_valid else 'None valid vinerow data')
+        self.get_logger().info('frameID: {id} Time: {sec} {nanosec}'.format(id=msg2.header.frame_id, sec=msg2.header.stamp.sec, nanosec=msg2.header.stamp.nanosec))
         self.i += 1
 
 

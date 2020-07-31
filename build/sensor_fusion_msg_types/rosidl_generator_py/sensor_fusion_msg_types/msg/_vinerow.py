@@ -5,7 +5,7 @@
 
 # Import statements for member types
 
-# Member 'var'
+# Member 'variance'
 import numpy  # noqa: E402, I100
 
 import rosidl_parser.definition  # noqa: E402, I100
@@ -64,18 +64,18 @@ class Vinerow(metaclass=Metaclass_Vinerow):
     """Message class 'Vinerow'."""
 
     __slots__ = [
-        '_dir',
+        '_direction',
         '_center',
-        '_dist',
-        '_var',
+        '_distance',
+        '_variance',
         '_is_valid',
     ]
 
     _fields_and_field_types = {
-        'dir': 'geometry_msgs/Vector3',
+        'direction': 'geometry_msgs/Vector3',
         'center': 'geometry_msgs/Point',
-        'dist': 'double',
-        'var': 'double[7]',
+        'distance': 'double',
+        'variance': 'double[7]',
         'is_valid': 'boolean',
     }
 
@@ -92,15 +92,15 @@ class Vinerow(metaclass=Metaclass_Vinerow):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from geometry_msgs.msg import Vector3
-        self.dir = kwargs.get('dir', Vector3())
+        self.direction = kwargs.get('direction', Vector3())
         from geometry_msgs.msg import Point
         self.center = kwargs.get('center', Point())
-        self.dist = kwargs.get('dist', float())
-        if 'var' not in kwargs:
-            self.var = numpy.zeros(7, dtype=numpy.float64)
+        self.distance = kwargs.get('distance', float())
+        if 'variance' not in kwargs:
+            self.variance = numpy.zeros(7, dtype=numpy.float64)
         else:
-            self.var = numpy.array(kwargs.get('var'), dtype=numpy.float64)
-            assert self.var.shape == (7, )
+            self.variance = numpy.array(kwargs.get('variance'), dtype=numpy.float64)
+            assert self.variance.shape == (7, )
         self.is_valid = kwargs.get('is_valid', bool())
 
     def __repr__(self):
@@ -132,13 +132,13 @@ class Vinerow(metaclass=Metaclass_Vinerow):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.dir != other.dir:
+        if self.direction != other.direction:
             return False
         if self.center != other.center:
             return False
-        if self.dist != other.dist:
+        if self.distance != other.distance:
             return False
-        if all(self.var != other.var):
+        if all(self.variance != other.variance):
             return False
         if self.is_valid != other.is_valid:
             return False
@@ -149,19 +149,19 @@ class Vinerow(metaclass=Metaclass_Vinerow):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @property  # noqa: A003
-    def dir(self):
-        """Message field 'dir'."""
-        return self._dir
+    @property
+    def direction(self):
+        """Message field 'direction'."""
+        return self._direction
 
-    @dir.setter  # noqa: A003
-    def dir(self, value):
+    @direction.setter
+    def direction(self, value):
         if __debug__:
             from geometry_msgs.msg import Vector3
             assert \
                 isinstance(value, Vector3), \
-                "The 'dir' field must be a sub message of type 'Vector3'"
-        self._dir = value
+                "The 'direction' field must be a sub message of type 'Vector3'"
+        self._direction = value
 
     @property
     def center(self):
@@ -178,31 +178,31 @@ class Vinerow(metaclass=Metaclass_Vinerow):
         self._center = value
 
     @property
-    def dist(self):
-        """Message field 'dist'."""
-        return self._dist
+    def distance(self):
+        """Message field 'distance'."""
+        return self._distance
 
-    @dist.setter
-    def dist(self, value):
+    @distance.setter
+    def distance(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'dist' field must be of type 'float'"
-        self._dist = value
+                "The 'distance' field must be of type 'float'"
+        self._distance = value
 
     @property
-    def var(self):
-        """Message field 'var'."""
-        return self._var
+    def variance(self):
+        """Message field 'variance'."""
+        return self._variance
 
-    @var.setter
-    def var(self, value):
+    @variance.setter
+    def variance(self, value):
         if isinstance(value, numpy.ndarray):
             assert value.dtype == numpy.float64, \
-                "The 'var' numpy.ndarray() must have the dtype of 'numpy.float64'"
+                "The 'variance' numpy.ndarray() must have the dtype of 'numpy.float64'"
             assert value.size == 7, \
-                "The 'var' numpy.ndarray() must have a size of 7"
-            self._var = value
+                "The 'variance' numpy.ndarray() must have a size of 7"
+            self._variance = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -218,8 +218,8 @@ class Vinerow(metaclass=Metaclass_Vinerow):
                  len(value) == 7 and
                  all(isinstance(v, float) for v in value) and
                  True), \
-                "The 'var' field must be a set or sequence with length 7 and each value of type 'float'"
-        self._var = numpy.array(value, dtype=numpy.float64)
+                "The 'variance' field must be a set or sequence with length 7 and each value of type 'float'"
+        self._variance = numpy.array(value, dtype=numpy.float64)
 
     @property
     def is_valid(self):

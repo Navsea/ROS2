@@ -18,6 +18,7 @@ from rclpy.node import Node
 from sensor_fusion_msgs.msg import Vinerows
 
 global_variable_test = 15
+vinerow_data = Vinerows()
 
 class MinimalSubscriber(Node):
 
@@ -30,7 +31,10 @@ class MinimalSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
 
+
     def listener_callback(self, msg):
+        global vinerow_data
+        vinerow_data = msg
         for vinerow in msg.vinerows:
             self.get_logger().info('Vinerow:\n' +
                                    'Direction: {dir_x} {dir_y} {dir_z}\n'.format(dir_x=vinerow.dir.x,

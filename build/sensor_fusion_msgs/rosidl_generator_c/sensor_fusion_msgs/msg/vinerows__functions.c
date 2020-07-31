@@ -10,6 +10,8 @@
 
 
 // Include directives for member types
+// Member `header`
+#include "std_msgs/msg/header__functions.h"
 // Member `vinerows`
 #include "sensor_fusion_msg_types/msg/vinerow__functions.h"
 
@@ -19,12 +21,15 @@ sensor_fusion_msgs__msg__Vinerows__init(sensor_fusion_msgs__msg__Vinerows * msg)
   if (!msg) {
     return false;
   }
+  // header
+  if (!std_msgs__msg__Header__init(&msg->header)) {
+    sensor_fusion_msgs__msg__Vinerows__fini(msg);
+    return false;
+  }
   // vinerows
-  for (size_t i = 0; i < 7; ++i) {
-    if (!sensor_fusion_msg_types__msg__Vinerow__init(&msg->vinerows[i])) {
-      sensor_fusion_msgs__msg__Vinerows__fini(msg);
-      return false;
-    }
+  if (!sensor_fusion_msg_types__msg__Vinerow__Sequence__init(&msg->vinerows, 0)) {
+    sensor_fusion_msgs__msg__Vinerows__fini(msg);
+    return false;
   }
   return true;
 }
@@ -35,10 +40,10 @@ sensor_fusion_msgs__msg__Vinerows__fini(sensor_fusion_msgs__msg__Vinerows * msg)
   if (!msg) {
     return;
   }
+  // header
+  std_msgs__msg__Header__fini(&msg->header);
   // vinerows
-  for (size_t i = 0; i < 7; ++i) {
-    sensor_fusion_msg_types__msg__Vinerow__fini(&msg->vinerows[i]);
-  }
+  sensor_fusion_msg_types__msg__Vinerow__Sequence__fini(&msg->vinerows);
 }
 
 sensor_fusion_msgs__msg__Vinerows *

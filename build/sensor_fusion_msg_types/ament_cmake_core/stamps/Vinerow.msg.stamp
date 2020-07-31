@@ -1,5 +1,5 @@
-geometry_msgs/Vector3 dir
+geometry_msgs/Vector3 direction
 geometry_msgs/Point center
-float64 dist
-float64[7] var
+float64 distance
+float64[7] variance
 bool is_valid

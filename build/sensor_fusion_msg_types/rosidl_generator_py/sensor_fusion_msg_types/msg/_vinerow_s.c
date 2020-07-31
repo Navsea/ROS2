@@ -63,12 +63,12 @@ bool sensor_fusion_msg_types__msg__vinerow__convert_from_py(PyObject * _pymsg, v
         full_classname_dest, 44) == 0);
   }
   sensor_fusion_msg_types__msg__Vinerow * ros_message = _ros_message;
-  {  // dir
-    PyObject * field = PyObject_GetAttrString(_pymsg, "dir");
+  {  // direction
+    PyObject * field = PyObject_GetAttrString(_pymsg, "direction");
     if (!field) {
       return false;
     }
-    if (!geometry_msgs__msg__vector3__convert_from_py(field, &ros_message->dir)) {
+    if (!geometry_msgs__msg__vector3__convert_from_py(field, &ros_message->direction)) {
       Py_DECREF(field);
       return false;
     }
@@ -85,17 +85,17 @@ bool sensor_fusion_msg_types__msg__vinerow__convert_from_py(PyObject * _pymsg, v
     }
     Py_DECREF(field);
   }
-  {  // dist
-    PyObject * field = PyObject_GetAttrString(_pymsg, "dist");
+  {  // distance
+    PyObject * field = PyObject_GetAttrString(_pymsg, "distance");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->dist = PyFloat_AS_DOUBLE(field);
+    ros_message->distance = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // var
-    PyObject * field = PyObject_GetAttrString(_pymsg, "var");
+  {  // variance
+    PyObject * field = PyObject_GetAttrString(_pymsg, "variance");
     if (!field) {
       return false;
     }
@@ -108,7 +108,7 @@ bool sensor_fusion_msg_types__msg__vinerow__convert_from_py(PyObject * _pymsg, v
     assert(PyArray_NDIM(seq_field) == 1);
     assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
     Py_ssize_t size = 7;
-    double * dest = ros_message->var;
+    double * dest = ros_message->variance;
     for (Py_ssize_t i = 0; i < size; ++i) {
       double tmp = *(npy_float64 *)PyArray_GETPTR1(seq_field, i);
       memcpy(&dest[i], &tmp, sizeof(double));
@@ -147,14 +147,14 @@ PyObject * sensor_fusion_msg_types__msg__vinerow__convert_to_py(void * raw_ros_m
     }
   }
   sensor_fusion_msg_types__msg__Vinerow * ros_message = (sensor_fusion_msg_types__msg__Vinerow *)raw_ros_message;
-  {  // dir
+  {  // direction
     PyObject * field = NULL;
-    field = geometry_msgs__msg__vector3__convert_to_py(&ros_message->dir);
+    field = geometry_msgs__msg__vector3__convert_to_py(&ros_message->direction);
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "dir", field);
+      int rc = PyObject_SetAttrString(_pymessage, "direction", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -175,20 +175,20 @@ PyObject * sensor_fusion_msg_types__msg__vinerow__convert_to_py(void * raw_ros_m
       }
     }
   }
-  {  // dist
+  {  // distance
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->dist);
+    field = PyFloat_FromDouble(ros_message->distance);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "dist", field);
+      int rc = PyObject_SetAttrString(_pymessage, "distance", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // var
+  {  // variance
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "var");
+    field = PyObject_GetAttrString(_pymessage, "variance");
     if (!field) {
       return NULL;
     }
@@ -200,7 +200,7 @@ PyObject * sensor_fusion_msg_types__msg__vinerow__convert_to_py(void * raw_ros_m
     assert(PyArray_TYPE(seq_field) == NPY_FLOAT64);
     assert(sizeof(npy_float64) == sizeof(double));
     npy_float64 * dst = (npy_float64 *)PyArray_GETPTR1(seq_field, 0);
-    double * src = &(ros_message->var[0]);
+    double * src = &(ros_message->variance[0]);
     memcpy(dst, src, 7 * sizeof(double));
     Py_DECREF(field);
   }

@@ -1,1 +1,2 @@
-sensor_fusion_msg_types/Vinerow[7] vinerows
+std_msgs/Header header
+sensor_fusion_msg_types/Vinerow[] vinerows

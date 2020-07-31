@@ -18,7 +18,7 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'dir'
+// Member 'direction'
 #include "geometry_msgs/msg/vector3__struct.h"
 // Member 'center'
 #include "geometry_msgs/msg/point__struct.h"
@@ -26,10 +26,10 @@ extern "C"
 // Struct defined in msg/Vinerow in the package sensor_fusion_msg_types.
 typedef struct sensor_fusion_msg_types__msg__Vinerow
 {
-  geometry_msgs__msg__Vector3 dir;
+  geometry_msgs__msg__Vector3 direction;
   geometry_msgs__msg__Point center;
-  double dist;
-  double var[7];
+  double distance;
+  double variance[7];
   bool is_valid;
 } sensor_fusion_msg_types__msg__Vinerow;
 

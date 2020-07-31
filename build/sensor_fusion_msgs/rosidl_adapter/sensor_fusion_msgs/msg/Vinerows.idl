@@ -3,13 +3,14 @@
 // generated code does not contain a copyright notice
 
 #include "sensor_fusion_msg_types/msg/Vinerow.idl"
+#include "std_msgs/msg/Header.idl"
 
 module sensor_fusion_msgs {
   module msg {
-    typedef sensor_fusion_msg_types::msg::Vinerow sensor_fusion_msg_types__msg__Vinerow;
-    typedef sensor_fusion_msg_types__msg__Vinerow sensor_fusion_msg_types__msg__Vinerow__7[7];
     struct Vinerows {
-      sensor_fusion_msg_types__msg__Vinerow__7 vinerows;
+      std_msgs::msg::Header header;
+
+      sequence<sensor_fusion_msg_types::msg::Vinerow> vinerows;
     };
   };
 };

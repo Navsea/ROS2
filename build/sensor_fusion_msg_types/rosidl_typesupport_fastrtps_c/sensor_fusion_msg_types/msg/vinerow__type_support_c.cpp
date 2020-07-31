@@ -35,7 +35,7 @@ extern "C"
 #endif
 
 #include "geometry_msgs/msg/point__functions.h"  // center
-#include "geometry_msgs/msg/vector3__functions.h"  // dir
+#include "geometry_msgs/msg/vector3__functions.h"  // direction
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_sensor_fusion_msg_types
@@ -77,14 +77,14 @@ static bool _Vinerow__cdr_serialize(
     return false;
   }
   const _Vinerow__ros_msg_type * ros_message = static_cast<const _Vinerow__ros_msg_type *>(untyped_ros_message);
-  // Field name: dir
+  // Field name: direction
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
       )()->data);
     if (!callbacks->cdr_serialize(
-        &ros_message->dir, cdr))
+        &ros_message->direction, cdr))
     {
       return false;
     }
@@ -103,15 +103,15 @@ static bool _Vinerow__cdr_serialize(
     }
   }
 
-  // Field name: dist
+  // Field name: distance
   {
-    cdr << ros_message->dist;
+    cdr << ros_message->distance;
   }
 
-  // Field name: var
+  // Field name: variance
   {
     size_t size = 7;
-    auto array_ptr = ros_message->var;
+    auto array_ptr = ros_message->variance;
     cdr.serializeArray(array_ptr, size);
   }
 
@@ -132,14 +132,14 @@ static bool _Vinerow__cdr_deserialize(
     return false;
   }
   _Vinerow__ros_msg_type * ros_message = static_cast<_Vinerow__ros_msg_type *>(untyped_ros_message);
-  // Field name: dir
+  // Field name: direction
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
       )()->data);
     if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->dir))
+        cdr, &ros_message->direction))
     {
       return false;
     }
@@ -158,15 +158,15 @@ static bool _Vinerow__cdr_deserialize(
     }
   }
 
-  // Field name: dist
+  // Field name: distance
   {
-    cdr >> ros_message->dist;
+    cdr >> ros_message->distance;
   }
 
-  // Field name: var
+  // Field name: variance
   {
     size_t size = 7;
-    auto array_ptr = ros_message->var;
+    auto array_ptr = ros_message->variance;
     cdr.deserializeArray(array_ptr, size);
   }
 
@@ -194,24 +194,24 @@ size_t get_serialized_size_sensor_fusion_msg_types__msg__Vinerow(
   (void)padding;
   (void)wchar_size;
 
-  // field.name dir
+  // field.name direction
 
   current_alignment += get_serialized_size_geometry_msgs__msg__Vector3(
-    &(ros_message->dir), current_alignment);
+    &(ros_message->direction), current_alignment);
   // field.name center
 
   current_alignment += get_serialized_size_geometry_msgs__msg__Point(
     &(ros_message->center), current_alignment);
-  // field.name dist
+  // field.name distance
   {
-    size_t item_size = sizeof(ros_message->dist);
+    size_t item_size = sizeof(ros_message->distance);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name var
+  // field.name variance
   {
     size_t array_size = 7;
-    auto array_ptr = ros_message->var;
+    auto array_ptr = ros_message->variance;
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
     current_alignment += array_size * item_size +
@@ -247,7 +247,7 @@ size_t max_serialized_size_sensor_fusion_msg_types__msg__Vinerow(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: dir
+  // member: direction
   {
     size_t array_size = 1;
 
@@ -269,14 +269,14 @@ size_t max_serialized_size_sensor_fusion_msg_types__msg__Vinerow(
         full_bounded, current_alignment);
     }
   }
-  // member: dist
+  // member: distance
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: var
+  // member: variance
   {
     size_t array_size = 7;
 

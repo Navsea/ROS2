@@ -24,11 +24,12 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(sensor_fusion_msg_types REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Vinerows.msg"
-  DEPENDENCIES builtin_interfaces sensor_fusion_msg_types
+  DEPENDENCIES builtin_interfaces std_msgs sensor_fusion_msg_types
  )
 
 if(BUILD_TESTING)

@@ -35,6 +35,7 @@ extern "C"
 #endif
 
 #include "sensor_fusion_msg_types/msg/vinerow__functions.h"  // vinerows
+#include "std_msgs/msg/header__functions.h"  // header
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_sensor_fusion_msgs
@@ -50,6 +51,19 @@ size_t max_serialized_size_sensor_fusion_msg_types__msg__Vinerow(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_sensor_fusion_msgs
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_fusion_msg_types, msg, Vinerow)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_sensor_fusion_msgs
+size_t get_serialized_size_std_msgs__msg__Header(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_sensor_fusion_msgs
+size_t max_serialized_size_std_msgs__msg__Header(
+  bool & full_bounded,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_sensor_fusion_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Header)();
 
 
 using _Vinerows__ros_msg_type = sensor_fusion_msgs__msg__Vinerows;
@@ -63,14 +77,28 @@ static bool _Vinerows__cdr_serialize(
     return false;
   }
   const _Vinerows__ros_msg_type * ros_message = static_cast<const _Vinerows__ros_msg_type *>(untyped_ros_message);
+  // Field name: header
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->header, cdr))
+    {
+      return false;
+    }
+  }
+
   // Field name: vinerows
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_fusion_msg_types, msg, Vinerow
       )()->data);
-    size_t size = 7;
-    auto array_ptr = ros_message->vinerows;
+    size_t size = ros_message->vinerows.size;
+    auto array_ptr = ros_message->vinerows.data;
+    cdr << static_cast<uint32_t>(size);
     for (size_t i = 0; i < size; ++i) {
       if (!callbacks->cdr_serialize(
           &array_ptr[i], cdr))
@@ -92,14 +120,35 @@ static bool _Vinerows__cdr_deserialize(
     return false;
   }
   _Vinerows__ros_msg_type * ros_message = static_cast<_Vinerows__ros_msg_type *>(untyped_ros_message);
+  // Field name: header
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Header
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->header))
+    {
+      return false;
+    }
+  }
+
   // Field name: vinerows
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_fusion_msg_types, msg, Vinerow
       )()->data);
-    size_t size = 7;
-    auto array_ptr = ros_message->vinerows;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->vinerows.data) {
+      sensor_fusion_msg_types__msg__Vinerow__Sequence__fini(&ros_message->vinerows);
+    }
+    if (!sensor_fusion_msg_types__msg__Vinerow__Sequence__init(&ros_message->vinerows, size)) {
+      return "failed to create array for field 'vinerows'";
+    }
+    auto array_ptr = ros_message->vinerows.data;
     for (size_t i = 0; i < size; ++i) {
       if (!callbacks->cdr_deserialize(
           cdr, &array_ptr[i]))
@@ -126,10 +175,16 @@ size_t get_serialized_size_sensor_fusion_msgs__msg__Vinerows(
   (void)padding;
   (void)wchar_size;
 
+  // field.name header
+
+  current_alignment += get_serialized_size_std_msgs__msg__Header(
+    &(ros_message->header), current_alignment);
   // field.name vinerows
   {
-    size_t array_size = 7;
-    auto array_ptr = ros_message->vinerows;
+    size_t array_size = ros_message->vinerows.size;
+    auto array_ptr = ros_message->vinerows.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment += get_serialized_size_sensor_fusion_msg_types__msg__Vinerow(
@@ -160,9 +215,23 @@ size_t max_serialized_size_sensor_fusion_msgs__msg__Vinerows(
   (void)wchar_size;
   (void)full_bounded;
 
+  // member: header
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_std_msgs__msg__Header(
+        full_bounded, current_alignment);
+    }
+  }
   // member: vinerows
   {
-    size_t array_size = 7;
+    size_t array_size = 0;
+    full_bounded = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
 
     for (size_t index = 0; index < array_size; ++index) {

@@ -15,7 +15,7 @@
 
 
 // Include directives for member types
-// Member 'dir'
+// Member 'direction'
 #include "geometry_msgs/msg/vector3__struct.hpp"
 // Member 'center'
 #include "geometry_msgs/msg/point__struct.hpp"
@@ -39,54 +39,54 @@ struct Vinerow_
   using Type = Vinerow_<ContainerAllocator>;
 
   explicit Vinerow_(rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
-  : dir(_init),
+  : direction(_init),
     center(_init)
   {
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
-      this->dist = 0.0;
-      std::fill<typename std::array<double, 7>::iterator, double>(this->var.begin(), this->var.end(), 0.0);
+      this->distance = 0.0;
+      std::fill<typename std::array<double, 7>::iterator, double>(this->variance.begin(), this->variance.end(), 0.0);
       this->is_valid = false;
     }
   }
 
   explicit Vinerow_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
-  : dir(_alloc, _init),
+  : direction(_alloc, _init),
     center(_alloc, _init),
-    var(_alloc)
+    variance(_alloc)
   {
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
-      this->dist = 0.0;
-      std::fill<typename std::array<double, 7>::iterator, double>(this->var.begin(), this->var.end(), 0.0);
+      this->distance = 0.0;
+      std::fill<typename std::array<double, 7>::iterator, double>(this->variance.begin(), this->variance.end(), 0.0);
       this->is_valid = false;
     }
   }
 
   // field types and members
-  using _dir_type =
+  using _direction_type =
     geometry_msgs::msg::Vector3_<ContainerAllocator>;
-  _dir_type dir;
+  _direction_type direction;
   using _center_type =
     geometry_msgs::msg::Point_<ContainerAllocator>;
   _center_type center;
-  using _dist_type =
+  using _distance_type =
     double;
-  _dist_type dist;
-  using _var_type =
+  _distance_type distance;
+  using _variance_type =
     std::array<double, 7>;
-  _var_type var;
+  _variance_type variance;
   using _is_valid_type =
     bool;
   _is_valid_type is_valid;
 
   // setters for named parameter idiom
-  Type & set__dir(
+  Type & set__direction(
     const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
   {
-    this->dir = _arg;
+    this->direction = _arg;
     return *this;
   }
   Type & set__center(
@@ -95,16 +95,16 @@ struct Vinerow_
     this->center = _arg;
     return *this;
   }
-  Type & set__dist(
+  Type & set__distance(
     const double & _arg)
   {
-    this->dist = _arg;
+    this->distance = _arg;
     return *this;
   }
-  Type & set__var(
+  Type & set__variance(
     const std::array<double, 7> & _arg)
   {
-    this->var = _arg;
+    this->variance = _arg;
     return *this;
   }
   Type & set__is_valid(
@@ -156,16 +156,16 @@ struct Vinerow_
   // comparison operators
   bool operator==(const Vinerow_ & other) const
   {
-    if (this->dir != other.dir) {
+    if (this->direction != other.direction) {
       return false;
     }
     if (this->center != other.center) {
       return false;
     }
-    if (this->dist != other.dist) {
+    if (this->distance != other.distance) {
       return false;
     }
-    if (this->var != other.var) {
+    if (this->variance != other.variance) {
       return false;
     }
     if (this->is_valid != other.is_valid) {
