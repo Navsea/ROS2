@@ -1,0 +1,2 @@
+Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1
+Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '2': /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1

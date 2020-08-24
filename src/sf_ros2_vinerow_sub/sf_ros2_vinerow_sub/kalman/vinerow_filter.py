@@ -5,7 +5,7 @@ import time
 from sensor_fusion_msgs.msg import Vinerows
 
 # The vine row width can be assumed to be known, received via CAN
-VINE_ROW_WIDTH = 0.6
+VINE_ROW_WIDTH = 3
 
 @dataclass
 class Object:
@@ -17,6 +17,7 @@ class Object:
 class Runtime:
     time_stamp: float
     time_step: float
+    prev_time_stamp: float
 
 @dataclass
 class VinerowStaticLimits:
@@ -57,7 +58,7 @@ class SfVinerow:
         dynamic_limits = VinerowData(0., 0., 0., 0., 0., 0., 0.)
         self.limits = VinerowLimits(static=static_limits, dynamic=dynamic_limits)
         self.gh = Object(0., np.array([0., 0., 0.]))
-        self.runtime = [Runtime(0., 0.)] * 7
+        self.runtime = [Runtime(0., 0., 0.) for _ in range(7)]
         self.set_gh_data()
         self.first = [True] * 7
         self.z = np.zeros((7, 8))
@@ -65,32 +66,34 @@ class SfVinerow:
         print("Vinerow filter initialization done")
 
     def set_gh_data(self):
-        self.gh.speed = 1.0  # m/s
+        self.gh.speed = 0.1  # m/s
         self.gh.heading = np.array([0.4, 0.3, 0.6])
 
     def set_runtime_data(self, i):
-        prev_time_stamp = self.runtime[i].time_stamp
         self.runtime[i].time_stamp = time.time()
-        self.runtime[i].time_step = self.runtime[i].time_stamp - prev_time_stamp
-        print('Time stamp', i, ': ', self.runtime[i].time_stamp, ' Time step: ', self.runtime[i].time_step)
+        self.runtime[i].time_step = self.runtime[i].time_stamp - self.runtime[i].prev_time_stamp
+        # print('Time stamp', i, ': ', self.runtime[i].time_stamp, ' Time step: ', self.runtime[i].time_step)
+        self.runtime[i].prev_time_stamp = self.runtime[i].time_stamp
 
     def initialize_filter(self):
         print("Initializing filters")
         # define the limits of a vinerow, normalized to center vinerow
-        self.limits.static.center_x_max = 5
-        self.limits.static.center_x_min = -5
-        self.limits.static.center_y_max = 0.6
-        self.limits.static.center_y_min = -0.6
-        self.limits.static.center_z_max = 0
-        self.limits.static.center_z_min = -2
+        # the data I receive now, is not centered to tractor center
+        # thats why the x limits are now non default
+        self.limits.static.center_x_max = -5
+        self.limits.static.center_x_min = -11
+        self.limits.static.center_y_max = 1.5
+        self.limits.static.center_y_min = -1.5
+        self.limits.static.center_z_max = 0.5
+        self.limits.static.center_z_min = -0.5
         self.limits.static.direction_x_max = 1
-        self.limits.static.direction_x_min = 0
+        self.limits.static.direction_x_min = -1
         self.limits.static.direction_y_max = 1
-        self.limits.static.direction_y_min = 0
+        self.limits.static.direction_y_min = -1
         self.limits.static.direction_z_max = 1
-        self.limits.static.direction_z_min = 0
-        self.limits.static.distance_x_max = 20
-        self.limits.static.distance_x_min = 0
+        self.limits.static.direction_z_min = -1
+        self.limits.static.distance_x_max = 110
+        self.limits.static.distance_x_min = -110
 
         self.limits.dynamic.center_x = 1
         self.limits.dynamic.center_y = 0.05
@@ -115,7 +118,7 @@ class SfVinerow:
                              [0., 0., 0., 0., 0., 1., 0.],
                              [0., 0., 0., self.gh.speed * self.runtime[i].time_step, 0., 0., 1.]])
 
-            kf.H = np.full(7, 1)
+            kf.H = np.diag(np.full(7, 1))
 
             kf.P = np.diag(np.array([100., 100., 100., 0.64, 0.64, 0.64, 400.]))
 
@@ -131,13 +134,20 @@ class SfVinerow:
         self.z = np.zeros((7, 8))
 
         for i, vinerow in enumerate(msg.vinerows):
-            print('RECEIVED ', i, ':\n' + 'Center: {center_x} {center_y} {center_z}'.format(  center_x=vinerow.center.x,
-                                                                                                center_y=vinerow.center.y,
-                                                                                                center_z=vinerow.center.z))
+            print('RECEIVED ', i, ':\n' + 'Center: {center_x} {center_y} {center_z}\n'.format(center_x=vinerow.center.x,
+                                                                                            center_y=vinerow.center.y,
+                                                                                            center_z=vinerow.center.z) +
+                  'Direction: {dir_x} {dir_y} {dir_z}\n'.format(dir_x=vinerow.direction.x,
+                                                                dir_y=vinerow.direction.y,
+                                                                dir_z=vinerow.direction.z) +
+                  'Distance till end: {dist}'.format(dist=vinerow.distance)
+                  )
 
             # static vine row checking
             if ((vinerow.center.x >= self.limits.static.center_x_min) and (vinerow.center.x <= self.limits.static.center_x_max) and
-                ((vinerow.center.y % VINE_ROW_WIDTH) >= self.limits.static.center_y_min) and ((vinerow.center.y % VINE_ROW_WIDTH) <= self.limits.static.center_y_max) and
+                # removed y check for now, not sure what i can apply for limits here
+                # ((vinerow.center.y % VINE_ROW_WIDTH) >= self.limits.static.center_y_min) and ((vinerow.center.y %
+                    # VINE_ROW_WIDTH) <= self.limits.static.center_y_max) and
                 (vinerow.center.z >= self.limits.static.center_z_min) and (vinerow.center.z <= self.limits.static.center_z_max) and
                 (vinerow.direction.x >= self.limits.static.direction_x_min) and (vinerow.direction.x <= self.limits.static.direction_x_max) and
                 (vinerow.direction.y >= self.limits.static.direction_y_min) and (vinerow.direction.y <= self.limits.static.direction_y_max) and
@@ -146,6 +156,9 @@ class SfVinerow:
                 print("static check ok")
                 # determine the vinerow index
                 vinerow_index = self.vinerow_indexing(vinerow.center.y)
+
+                # get variance of measurement
+                self.kfs[vinerow_index].R = np.diag(vinerow.variance)
 
                 # only keep 7 vine rows
                 if abs(vinerow_index) <= 3:
@@ -157,6 +170,23 @@ class SfVinerow:
                     self.z[vinerow_index+3][5] = vinerow.direction.z
                     self.z[vinerow_index+3][6] = vinerow.distance
                     self.z[vinerow_index+3][7] = True
+
+            else:
+                print('measurement rejected')
+                if not((vinerow.center.x >= self.limits.static.center_x_min) and (vinerow.center.x <= self.limits.static.center_x_max)):
+                    print('x violation')
+                if not(((vinerow.center.y % VINE_ROW_WIDTH) >= self.limits.static.center_y_min) and ((vinerow.center.y % VINE_ROW_WIDTH) <= self.limits.static.center_y_max)):
+                    print('y violation')
+                if not((vinerow.center.z >= self.limits.static.center_z_min) and (vinerow.center.z <= self.limits.static.center_z_max)):
+                    print('z violation')
+                if not((vinerow.direction.x >= self.limits.static.direction_x_min) and (vinerow.direction.x <= self.limits.static.direction_x_max)):
+                    print('dir x violation')
+                if not((vinerow.direction.y >= self.limits.static.direction_y_min) and (vinerow.direction.y <= self.limits.static.direction_y_max)):
+                    print('dir y violation')
+                if not((vinerow.direction.z >= self.limits.static.direction_z_min) and (vinerow.direction.z <= self.limits.static.direction_z_max)):
+                    print('dir z violation')
+                if not((vinerow.distance >= self.limits.static.distance_x_min) and (vinerow.distance <= self.limits.static.distance_x_max)):
+                    print('distance violation')
 
         # dynamic vine row checking
         # to be implemented
@@ -177,8 +207,11 @@ class SfVinerow:
             # only execute prediction after we have received a first measurement (filter init required).
             if not self.first[i]:
                 print("prediction w timestep: ", self.runtime[i].time_step, " and speed: ", self.gh.speed)
-                print("P = ", kf.P)
-                kf.predict()
+                kf.F[1][4] = self.gh.speed * self.runtime[i].time_step
+                kf.F[2][5] = self.gh.speed * self.runtime[i].time_step
+                kf.F[6][3] = -self.gh.speed * self.runtime[i].time_step
+
+                kf.predict(F=kf.F)
 
     def update(self):
         print("updating")
@@ -196,4 +229,4 @@ class SfVinerow:
                 else:  # otherwise update the filters with the measurement
                     # remove the is_valid flag before updating the kalman filter
                     self.kfs[i].update(z=np.delete(self.z[i], 7))
-                    print("measurement: ", np.delete(self.z[i], 7))
+                    print("measurement", i, ": ", np.delete(self.z[i], 7))

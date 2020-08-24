@@ -1,0 +1,204 @@
+[1.076s] DEBUG:colcon:Command line arguments: ['/home/kenneth/.local/bin/colcon', 'build', '--symlink-install', '--packages-select', 'sf_ros2_vinerow_sub']
+[1.077s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f70eff351d0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['sf_ros2_vinerow_sub'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=1, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f70eff351d0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f70eff35518>)
+[1.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.145s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kenneth/PycharmProjects/ros2_ws_fix'
+[1.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extensions ['ignore', 'ignore_ament_install']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extension 'ignore'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extension 'ignore_ament_install'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extensions ['colcon_pkg']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extension 'colcon_pkg'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extensions ['colcon_meta']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extension 'colcon_meta'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extensions ['ros']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_create) by extension 'ros'
+[1.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_demo_custommsg_create' with type 'ros.ament_cmake' and name 'ros2_demo_custommsg_create'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extensions ['ignore', 'ignore_ament_install']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extension 'ignore'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extension 'ignore_ament_install'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extensions ['colcon_pkg']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extension 'colcon_pkg'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extensions ['colcon_meta']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extension 'colcon_meta'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extensions ['ros']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_custommsg_pub) by extension 'ros'
+[1.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_demo_custommsg_pub' with type 'ros.ament_python' and name 'ros2_demo_custommsg_pub'
+[1.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extensions ['ignore', 'ignore_ament_install']
+[1.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extension 'ignore'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extension 'ignore_ament_install'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extensions ['colcon_pkg']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extension 'colcon_pkg'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extensions ['colcon_meta']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extension 'colcon_meta'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extensions ['ros']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_publisher) by extension 'ros'
+[1.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_demo_publisher' with type 'ros.ament_python' and name 'ros2_demo_publisher'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extension 'ignore'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extension 'ignore_ament_install'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extensions ['colcon_pkg']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extension 'colcon_pkg'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extensions ['colcon_meta']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extension 'colcon_meta'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extensions ['ros']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_demo_subscriber) by extension 'ros'
+[1.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_demo_subscriber' with type 'ros.ament_python' and name 'ros2_demo_subscriber'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extensions ['ignore', 'ignore_ament_install']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extension 'ignore'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extension 'ignore_ament_install'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extensions ['colcon_pkg']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extension 'colcon_pkg'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extensions ['colcon_meta']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extension 'colcon_meta'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extensions ['ros']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msg_types) by extension 'ros'
+[1.188s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_fusion_msg_types' with type 'ros.ament_cmake' and name 'sensor_fusion_msg_types'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extension 'ignore'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extension 'ignore_ament_install'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extensions ['colcon_pkg']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extension 'colcon_pkg'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extensions ['colcon_meta']
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extension 'colcon_meta'
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extensions ['ros']
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_msgs) by extension 'ros'
+[1.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_fusion_msgs' with type 'ros.ament_cmake' and name 'sensor_fusion_msgs'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extension 'ignore'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extension 'ignore_ament_install'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extensions ['colcon_pkg']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extension 'colcon_pkg'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extensions ['colcon_meta']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extension 'colcon_meta'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extensions ['ros']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion_subscriber) by extension 'ros'
+[1.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_fusion_subscriber' with type 'ros.ament_python' and name 'sensor_fusion_subscriber'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extensions ['ignore', 'ignore_ament_install']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extension 'ignore'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extension 'ignore_ament_install'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extensions ['colcon_pkg']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extension 'colcon_pkg'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extensions ['colcon_meta']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extension 'colcon_meta'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extensions ['ros']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/sf_ros2_vinerow_sub) by extension 'ros'
+[1.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sf_ros2_vinerow_sub' with type 'ros.ament_python' and name 'sf_ros2_vinerow_sub'
+[1.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.225s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_demo_custommsg_create' in 'src/ros2_demo_custommsg_create'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_demo_publisher' in 'src/ros2_demo_publisher'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_demo_subscriber' in 'src/ros2_demo_subscriber'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sensor_fusion_msg_types' in 'src/sensor_fusion_msg_types'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sensor_fusion_msgs' in 'src/sensor_fusion_msgs'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_demo_custommsg_pub' in 'src/ros2_demo_custommsg_pub'
+[1.226s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sensor_fusion_subscriber' in 'src/sensor_fusion_subscriber'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'cmake_args' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'cmake_target' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'cmake_clean_cache' from command line to 'False'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'cmake_clean_first' from command line to 'False'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'cmake_force_configure' from command line to 'False'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'ament_cmake_args' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'catkin_cmake_args' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'sf_ros2_vinerow_sub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.246s] DEBUG:colcon.colcon_core.verb:Building package 'sf_ros2_vinerow_sub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub', 'merge_install': False, 'path': '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sf_ros2_vinerow_sub', 'symlink_install': True, 'test_result_base': None}
+[1.250s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.286s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.286s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sf_ros2_vinerow_sub' with build type 'ament_python'
+[1.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('sf_ros2_vinerow_sub', 'ament_prefix_path')
+[1.309s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/ament_prefix_path.ps1'
+[1.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/ament_prefix_path.dsv'
+[1.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/ament_prefix_path.sh'
+[1.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.338s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[1.942s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kenneth/PycharmProjects/ros2_ws_fix/src/sf_ros2_vinerow_sub'
+[1.958s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.958s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.971s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[1.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub
+[3.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('sf_ros2_vinerow_sub', 'pythonpath_develop')
+[3.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub
+[3.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/pythonpath_develop.ps1'
+[3.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/pythonpath_develop.dsv'
+[3.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/pythonpath_develop.sh'
+[3.107s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub' for CMake module files
+[3.112s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub' for CMake config files
+[3.115s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib'
+[3.116s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/bin'
+[3.116s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/pkgconfig/sf_ros2_vinerow_sub.pc'
+[3.120s] Level 1:colcon.colcon_core.environment:checking '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages'
+[3.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('sf_ros2_vinerow_sub', 'pythonpath')
+[3.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/pythonpath.ps1'
+[3.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/pythonpath.dsv'
+[3.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/hook/pythonpath.sh'
+[3.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sf_ros2_vinerow_sub)
+[3.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/package.ps1'
+[3.155s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/package.dsv'
+[3.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/package.sh'
+[3.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/package.bash'
+[3.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub/package.zsh'
+[3.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/colcon-core/packages/sf_ros2_vinerow_sub)
+[3.166s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.167s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.167s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.167s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.221s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.221s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.221s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.226s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.257s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/local_setup.ps1'
+[3.259s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kenneth/PycharmProjects/ros2_ws_fix/install/_local_setup_util_ps1.py'
+[3.267s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/setup.ps1'
+[3.297s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/local_setup.sh'
+[3.298s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kenneth/PycharmProjects/ros2_ws_fix/install/_local_setup_util_sh.py'
+[3.299s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/setup.sh'
+[3.321s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/local_setup.bash'
+[3.321s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/setup.bash'
+[3.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/local_setup.zsh'
+[3.343s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kenneth/PycharmProjects/ros2_ws_fix/install/setup.zsh'

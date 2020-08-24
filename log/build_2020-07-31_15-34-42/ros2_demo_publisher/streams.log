@@ -1,0 +1,17 @@
+[0.426s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher
+[0.774s] running develop
+[0.931s] running egg_info
+[0.931s] writing ros2_demo_publisher.egg-info/PKG-INFO
+[0.932s] writing dependency_links to ros2_demo_publisher.egg-info/dependency_links.txt
+[0.937s] writing entry points to ros2_demo_publisher.egg-info/entry_points.txt
+[0.937s] writing requirements to ros2_demo_publisher.egg-info/requires.txt
+[0.937s] writing top-level names to ros2_demo_publisher.egg-info/top_level.txt
+[0.978s] reading manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'
+[0.983s] writing manifest file 'ros2_demo_publisher.egg-info/SOURCES.txt'
+[0.989s] running build_ext
+[0.990s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages/ros2-demo-publisher.egg-link (link to .)
+[0.991s] Installing demo_publisher script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/ros2_demo_publisher
+[0.991s] 
+[0.991s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher
+[0.992s] running install_data
+[1.020s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher

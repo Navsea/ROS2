@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating ros2_demo_composition.egg-info
+writing ros2_demo_composition.egg-info/PKG-INFO
+writing dependency_links to ros2_demo_composition.egg-info/dependency_links.txt
+writing entry points to ros2_demo_composition.egg-info/entry_points.txt
+writing requirements to ros2_demo_composition.egg-info/requires.txt
+writing top-level names to ros2_demo_composition.egg-info/top_level.txt
+writing manifest file 'ros2_demo_composition.egg-info/SOURCES.txt'
+package init file 'ros2_demo_composition/__init__.py' not found (or not a regular file)
+reading manifest file 'ros2_demo_composition.egg-info/SOURCES.txt'
+writing manifest file 'ros2_demo_composition.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/lib/python3.6/site-packages/ros2-demo-composition.egg-link (link to .)
+Installing demo_composition script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/lib/ros2_demo_composition
+
+Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_composition
+running install_data
+creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/share/ament_index
+creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/share/ament_index/resource_index
+creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/share/ament_index/resource_index/packages
+copying resource/ros2_demo_composition -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/share/ament_index/resource_index/packages
+copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/share/ros2_demo_composition

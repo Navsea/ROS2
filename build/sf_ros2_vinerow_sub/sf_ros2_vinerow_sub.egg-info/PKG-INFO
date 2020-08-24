@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: sf-ros2-vinerow-sub
+Version: 0.1
+Summary: Subscriber to sensor fusion messages
+Home-page: UNKNOWN
+Author: Kenneth De Leener
+Author-email: kenneth.de-leener@cnhind.com
+Maintainer: Kenneth De Leener
+Maintainer-email: kenneth.de-leener@cnhind.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: sensorFusion

@@ -1,0 +1,9 @@
+source;share/sf_vinerow/hook/pythonpath.ps1
+source;share/sf_vinerow/hook/pythonpath.dsv
+source;share/sf_vinerow/hook/pythonpath.sh
+source;share/sf_vinerow/hook/ament_prefix_path.ps1
+source;share/sf_vinerow/hook/ament_prefix_path.dsv
+source;share/sf_vinerow/hook/ament_prefix_path.sh
+source;../../build/sf_vinerow/share/sf_vinerow/hook/pythonpath_develop.ps1
+source;../../build/sf_vinerow/share/sf_vinerow/hook/pythonpath_develop.dsv
+source;../../build/sf_vinerow/share/sf_vinerow/hook/pythonpath_develop.sh

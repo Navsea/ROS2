@@ -1,0 +1,18 @@
+[0.496s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_vinerow': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_vinerow/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow
+[0.942s] running develop
+[1.158s] running egg_info
+[1.158s] writing sf_vinerow.egg-info/PKG-INFO
+[1.160s] writing dependency_links to sf_vinerow.egg-info/dependency_links.txt
+[1.161s] writing entry points to sf_vinerow.egg-info/entry_points.txt
+[1.163s] writing requirements to sf_vinerow.egg-info/requires.txt
+[1.163s] writing top-level names to sf_vinerow.egg-info/top_level.txt
+[1.214s] reading manifest file 'sf_vinerow.egg-info/SOURCES.txt'
+[1.215s] writing manifest file 'sf_vinerow.egg-info/SOURCES.txt'
+[1.219s] running build_ext
+[1.219s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/lib/python3.6/site-packages/sf-vinerow.egg-link (link to .)
+[1.221s] Installing sf_vinerow script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/lib/sf_vinerow
+[1.221s] 
+[1.221s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_vinerow
+[1.222s] running install_data
+[1.226s] copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/share/sf_vinerow
+[1.270s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_vinerow' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_vinerow/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow

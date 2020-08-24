@@ -1,0 +1,17 @@
+[0.386s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub
+[0.745s] running develop
+[0.903s] running egg_info
+[0.904s] writing ros2_demo_custommsg_pub.egg-info/PKG-INFO
+[0.904s] writing dependency_links to ros2_demo_custommsg_pub.egg-info/dependency_links.txt
+[0.905s] writing entry points to ros2_demo_custommsg_pub.egg-info/entry_points.txt
+[0.905s] writing requirements to ros2_demo_custommsg_pub.egg-info/requires.txt
+[0.906s] writing top-level names to ros2_demo_custommsg_pub.egg-info/top_level.txt
+[0.964s] reading manifest file 'ros2_demo_custommsg_pub.egg-info/SOURCES.txt'
+[0.966s] writing manifest file 'ros2_demo_custommsg_pub.egg-info/SOURCES.txt'
+[0.968s] running build_ext
+[0.968s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages/ros2-demo-custommsg-pub.egg-link (link to .)
+[0.970s] Installing demo_custommsg_pub script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/ros2_demo_custommsg_pub
+[0.970s] 
+[0.970s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub
+[0.970s] running install_data
+[1.007s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub' returned '0': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub

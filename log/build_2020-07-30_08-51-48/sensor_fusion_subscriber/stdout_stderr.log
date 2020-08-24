@@ -1,0 +1,10 @@
+running develop
+running egg_info
+creating senor_fusion_subscriber.egg-info
+writing senor_fusion_subscriber.egg-info/PKG-INFO
+writing dependency_links to senor_fusion_subscriber.egg-info/dependency_links.txt
+writing entry points to senor_fusion_subscriber.egg-info/entry_points.txt
+writing requirements to senor_fusion_subscriber.egg-info/requires.txt
+writing top-level names to senor_fusion_subscriber.egg-info/top_level.txt
+writing manifest file 'senor_fusion_subscriber.egg-info/SOURCES.txt'
+error: package directory 'senor_fusion_subscriber' does not exist

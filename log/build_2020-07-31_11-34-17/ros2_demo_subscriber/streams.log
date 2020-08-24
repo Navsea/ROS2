@@ -1,0 +1,17 @@
+[0.401s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber
+[0.734s] running develop
+[0.901s] running egg_info
+[0.902s] writing ros2_demo_subscriber.egg-info/PKG-INFO
+[0.902s] writing dependency_links to ros2_demo_subscriber.egg-info/dependency_links.txt
+[0.903s] writing entry points to ros2_demo_subscriber.egg-info/entry_points.txt
+[0.903s] writing requirements to ros2_demo_subscriber.egg-info/requires.txt
+[0.903s] writing top-level names to ros2_demo_subscriber.egg-info/top_level.txt
+[0.946s] reading manifest file 'ros2_demo_subscriber.egg-info/SOURCES.txt'
+[0.947s] writing manifest file 'ros2_demo_subscriber.egg-info/SOURCES.txt'
+[0.949s] running build_ext
+[0.949s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages/ros2-demo-subscriber.egg-link (link to .)
+[0.951s] Installing demo_subscriber script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/ros2_demo_subscriber
+[0.951s] 
+[0.951s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber
+[0.951s] running install_data
+[0.981s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber

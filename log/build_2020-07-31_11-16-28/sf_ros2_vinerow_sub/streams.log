@@ -1,0 +1,17 @@
+[0.416s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub
+[0.784s] running develop
+[0.962s] running egg_info
+[0.962s] writing sf_ros2_vinerow_sub.egg-info/PKG-INFO
+[0.963s] writing dependency_links to sf_ros2_vinerow_sub.egg-info/dependency_links.txt
+[0.964s] writing entry points to sf_ros2_vinerow_sub.egg-info/entry_points.txt
+[0.964s] writing requirements to sf_ros2_vinerow_sub.egg-info/requires.txt
+[0.964s] writing top-level names to sf_ros2_vinerow_sub.egg-info/top_level.txt
+[1.000s] reading manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+[1.005s] writing manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+[1.007s] running build_ext
+[1.007s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages/sf-ros2-vinerow-sub.egg-link (link to .)
+[1.009s] Installing sf_ros2_vinerow_sub script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/sf_ros2_vinerow_sub
+[1.009s] 
+[1.009s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub
+[1.010s] running install_data
+[1.055s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub' returned '0': AMENT_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs LD_LIBRARY_PATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub

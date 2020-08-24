@@ -1,0 +1,3 @@
+[console_scripts]
+sf_ros2_vinerow_sub = sf_ros2_vinerow_sub.sf_ros2_vinerow_sub:main
+

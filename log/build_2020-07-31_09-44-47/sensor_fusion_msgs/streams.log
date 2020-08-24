@@ -1,0 +1,26 @@
+[0.058s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1
+[0.183s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.227s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.227s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.355s] Traceback (most recent call last):
+[0.355s]   File "/opt/ros/eloquent/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.355s]     from ament_package.templates import get_environment_hook_template_path
+[0.355s] ModuleNotFoundError: No module named 'ament_package'
+[0.367s] CMake Error at /opt/ros/eloquent/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.367s]   execute_process(/usr/bin/python3
+[0.367s]   /opt/ros/eloquent/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.367s]   /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/ament_cmake_package_templates/templates.cmake)
+[0.367s]   returned error code 1
+[0.368s] Call Stack (most recent call first):
+[0.369s]   /opt/ros/eloquent/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:38 (include)
+[0.369s]   /opt/ros/eloquent/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.370s] -- Configuring incomplete, errors occurred!
+[0.370s] See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeOutput.log".
+[0.370s] See also "/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs/CMakeFiles/CMakeError.log".
+[0.370s]   /opt/ros/eloquent/share/ament_cmake/cmake/ament_cmakeConfig.cmake:38 (include)
+[0.370s]   CMakeLists.txt:19 (find_package)
+[0.370s] 
+[0.370s] 
+[0.377s] Makefile:704: recipe for target 'cmake_check_build_system' failed
+[0.377s] make: *** [cmake_check_build_system] Error 1
+[0.377s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '2': /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1

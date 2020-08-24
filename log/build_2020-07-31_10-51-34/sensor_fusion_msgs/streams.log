@@ -1,0 +1,126 @@
+[0.040s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1
+[0.107s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.414s] [  3%] Built target sensor_fusion_msgs__cpp
+[0.429s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.734s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.752s] [ 10%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sensor_fusion_msgs/msg/dds_fastrtps/vinerows__type_support.cpp.o[0m
+[1.187s] [ 13%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.309s] [ 13%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp
+[1.326s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.616s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_cpp[0m
+[1.633s] [ 20%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o[0m
+[2.010s] [ 24%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_cpp.so[0m
+[2.125s] [ 24%] Built target sensor_fusion_msgs__rosidl_typesupport_cpp
+[2.140s] [ 27%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.486s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_generator_c[0m
+[2.501s] [ 31%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_generator_c.dir/rosidl_generator_c/sensor_fusion_msgs/msg/vinerows__functions.c.o[0m
+[2.544s] [ 34%] [32m[1mLinking C shared library libsensor_fusion_msgs__rosidl_generator_c.so[0m
+[2.595s] [ 34%] Built target sensor_fusion_msgs__rosidl_generator_c
+[2.608s] [ 37%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.901s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c[0m
+[2.920s] [ 41%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sensor_fusion_msgs/msg/vinerows__type_support_c.cpp.o[0m
+[3.259s] [ 44%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.373s] [ 44%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c
+[3.385s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.642s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_c[0m
+[3.658s] [ 51%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o[0m
+[3.694s] [ 55%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_c.so[0m
+[3.773s] [ 55%] Built target sensor_fusion_msgs__rosidl_typesupport_c
+[3.786s] [ 58%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.071s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_introspection_c[0m
+[4.087s] [ 62%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sensor_fusion_msgs/msg/vinerows__type_support.c.o[0m
+[4.125s] [ 65%] [32m[1mLinking C shared library libsensor_fusion_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.171s] [ 65%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_c
+[4.184s] [ 68%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.489s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp[0m
+[4.508s] [ 72%] [32mBuilding CXX object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sensor_fusion_msgs/msg/vinerows__type_support.cpp.o[0m
+[4.823s] [ 75%] [32m[1mLinking CXX shared library libsensor_fusion_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.914s] [ 75%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp
+[4.938s] [ 75%] Built target sensor_fusion_msgs
+[4.969s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.543s] [ 79%] Built target sensor_fusion_msgs__py
+[5.560s] [35m[1mScanning dependencies of target sensor_fusion_msgs__python[0m
+[5.591s] [ 82%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__python.dir/rosidl_generator_py/sensor_fusion_msgs/msg/_vinerows_s.c.o[0m
+[5.693s] [ 86%] [32m[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/libsensor_fusion_msgs__python.so[0m
+[5.786s] [ 86%] Built target sensor_fusion_msgs__python
+[5.800s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_c__pyext[0m
+[5.821s] [ 89%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.905s] [ 93%] [32m[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[6.017s] [ 93%] Built target sensor_fusion_msgs__rosidl_typesupport_c__pyext
+[6.032s] [35m[1mScanning dependencies of target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[6.064s] [ 96%] [32mBuilding C object CMakeFiles/sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sensor_fusion_msgs/_sensor_fusion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.149s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[6.263s] [100%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[6.277s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs -- -j1 -l1
+[6.358s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs --target install -- -j1 -l1
+[6.427s] [  3%] Built target sensor_fusion_msgs__cpp
+[6.464s] [ 13%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp
+[6.500s] [ 24%] Built target sensor_fusion_msgs__rosidl_typesupport_cpp
+[6.530s] [ 34%] Built target sensor_fusion_msgs__rosidl_generator_c
+[6.566s] [ 44%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c
+[6.598s] [ 55%] Built target sensor_fusion_msgs__rosidl_typesupport_c
+[6.632s] [ 65%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_c
+[6.667s] [ 75%] Built target sensor_fusion_msgs__rosidl_typesupport_introspection_cpp
+[6.692s] [ 75%] Built target sensor_fusion_msgs
+[6.718s] [ 79%] Built target sensor_fusion_msgs__py
+[6.753s] [ 86%] Built target sensor_fusion_msgs__python
+[6.787s] [ 93%] Built target sensor_fusion_msgs__rosidl_typesupport_c__pyext
+[6.821s] [100%] Built target sensor_fusion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[6.844s] [36mInstall the project...[0m
+[6.856s] -- Install configuration: ""
+[6.857s] -- Execute custom install script
+[6.858s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/rosidl_interfaces/sensor_fusion_msgs
+[6.859s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_c.so
+[6.859s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/library_path.sh
+[6.860s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/library_path.dsv
+[6.860s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_cpp.so
+[6.861s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.863s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_fastrtps_c.h
+[6.864s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_fastrtps_c.so
+[6.865s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_generator_c__visibility_control.h
+[6.865s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows.h
+[6.865s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__functions.h
+[6.866s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__struct.h
+[6.866s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__type_support.h
+[6.867s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_generator_c.so
+[6.868s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.868s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_fastrtps_cpp.hpp
+[6.869s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.869s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows.hpp
+[6.870s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__struct.hpp
+[6.871s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__traits.hpp
+[6.871s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.872s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_introspection_c.h
+[6.873s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_introspection_c.so
+[6.874s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/include/sensor_fusion_msgs/msg/vinerows__rosidl_typesupport_introspection_cpp.hpp
+[6.875s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__rosidl_typesupport_introspection_cpp.so
+[6.875s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/pythonpath.sh
+[6.876s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/pythonpath.dsv
+[6.877s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/__init__.py
+[6.877s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/msg/__init__.py
+[6.878s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/msg/_vinerows.py
+[6.879s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+[6.879s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages/sensor_fusion_msgs/sensor_fusion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+[6.880s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/libsensor_fusion_msgs__python.so
+[6.881s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/msg/Vinerows.idl
+[6.881s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/msg/Vinerows.msg
+[6.882s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/package_run_dependencies/sensor_fusion_msgs
+[6.884s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/parent_prefix_path/sensor_fusion_msgs
+[6.884s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/ament_prefix_path.sh
+[6.885s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/ament_prefix_path.dsv
+[6.885s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/path.sh
+[6.886s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/environment/path.dsv
+[6.886s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.bash
+[6.887s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.sh
+[6.887s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.zsh
+[6.888s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/local_setup.dsv
+[6.888s] -- Symlinking: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.dsv
+[6.901s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/ament_index/resource_index/packages/sensor_fusion_msgs
+[6.901s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/rosidl_cmake-extras.cmake
+[6.902s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.903s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.903s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.904s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/sensor_fusion_msgsConfig.cmake
+[6.904s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/cmake/sensor_fusion_msgsConfig-version.cmake
+[6.905s] -- Up-to-date symlink: /home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/share/sensor_fusion_msgs/package.xml
+[6.967s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher:/opt/ros/eloquent /usr/bin/cmake --build /home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_msgs --target install -- -j1 -l1

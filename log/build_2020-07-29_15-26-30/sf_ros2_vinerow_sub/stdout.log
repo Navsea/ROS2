@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing sf_ros2_vinerow_sub.egg-info/PKG-INFO
+writing dependency_links to sf_ros2_vinerow_sub.egg-info/dependency_links.txt
+writing entry points to sf_ros2_vinerow_sub.egg-info/entry_points.txt
+writing requirements to sf_ros2_vinerow_sub.egg-info/requires.txt
+writing top-level names to sf_ros2_vinerow_sub.egg-info/top_level.txt
+reading manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+writing manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages/sf-ros2-vinerow-sub.egg-link (link to .)
+Installing sf_ros2_vinerow_sub script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/sf_ros2_vinerow_sub
+
+Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub
+running install_data

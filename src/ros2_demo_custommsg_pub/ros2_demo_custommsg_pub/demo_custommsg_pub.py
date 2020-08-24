@@ -18,14 +18,17 @@ from rclpy.time import Time
 from rclpy.clock import ClockType
 
 from std_msgs.msg import String
-from sensor_fusion_msgs.msg import Vinerows
-from sensor_fusion_msg_types.msg import Vinerow
+# from sensor_fusion_msgs.msg import Vinerows
+# from sensor_fusion_msg_types.msg import Vinerow
+from vinerows_msgs.msg import Vinerow
+from vinerows_msgs.msg import Vinerowlist
+
 
 class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(Vinerows, 'sensorFusion', 10)
+        self.publisher_ = self.create_publisher(Vinerowlist, 'lidarVinerows', 10)
         timer_period = 1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
@@ -34,7 +37,7 @@ class MinimalPublisher(Node):
         base_msg = Vinerow()
         base_msg2 = Vinerow()
 
-        msg2 = Vinerows()
+        msg2 = Vinerowlist()
 
         base_msg.center.x = 0.10
         base_msg.center.y = 0.10
@@ -44,7 +47,7 @@ class MinimalPublisher(Node):
         base_msg.direction.z = 0.
         base_msg.distance = 20.0
         base_msg.variance = [6.25, 0.0225, 0.0225, 0.0025, 0.0025, 0.0025, 6.25]
-        base_msg.is_valid = True
+        base_msg.is_valid = 1.
 
         base_msg2.center.x = 0.09
         base_msg2.center.y = 0.65
@@ -54,7 +57,7 @@ class MinimalPublisher(Node):
         base_msg2.direction.z = 0.
         base_msg2.distance = 20.0
         base_msg2.variance = [6.25, 0.0225, 0.0225, 0.0025, 0.0025, 0.0025, 6.25]
-        base_msg2.is_valid = True
+        base_msg2.is_valid = 1.
 
         msg2.header.stamp = self.get_clock().now().to_msg()
         msg2.header.frame_id = str(self.i)

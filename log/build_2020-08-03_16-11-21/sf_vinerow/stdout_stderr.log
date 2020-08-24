@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating sf_vinerow.egg-info
+writing sf_vinerow.egg-info/PKG-INFO
+writing dependency_links to sf_vinerow.egg-info/dependency_links.txt
+writing entry points to sf_vinerow.egg-info/entry_points.txt
+writing requirements to sf_vinerow.egg-info/requires.txt
+writing top-level names to sf_vinerow.egg-info/top_level.txt
+writing manifest file 'sf_vinerow.egg-info/SOURCES.txt'
+package init file 'sf_vinerow/__init__.py' not found (or not a regular file)
+reading manifest file 'sf_vinerow.egg-info/SOURCES.txt'
+writing manifest file 'sf_vinerow.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/lib/python3.6/site-packages/sf-vinerow.egg-link (link to .)
+Installing sf_vinerow script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/lib/sf_vinerow
+
+Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_vinerow
+running install_data
+creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/share/ament_index
+creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/share/ament_index/resource_index
+creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/share/ament_index/resource_index/packages
+copying resource/sf_vinerow -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/share/ament_index/resource_index/packages
+copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_vinerow/share/sf_vinerow

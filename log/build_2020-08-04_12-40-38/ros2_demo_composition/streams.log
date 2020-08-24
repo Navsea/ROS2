@@ -1,0 +1,17 @@
+[0.503s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_composition': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_composition/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition
+[0.980s] running develop
+[1.182s] running egg_info
+[1.183s] writing ros2_demo_composition.egg-info/PKG-INFO
+[1.183s] writing dependency_links to ros2_demo_composition.egg-info/dependency_links.txt
+[1.184s] writing entry points to ros2_demo_composition.egg-info/entry_points.txt
+[1.184s] writing requirements to ros2_demo_composition.egg-info/requires.txt
+[1.185s] writing top-level names to ros2_demo_composition.egg-info/top_level.txt
+[1.225s] reading manifest file 'ros2_demo_composition.egg-info/SOURCES.txt'
+[1.227s] writing manifest file 'ros2_demo_composition.egg-info/SOURCES.txt'
+[1.229s] running build_ext
+[1.229s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/lib/python3.6/site-packages/ros2-demo-composition.egg-link (link to .)
+[1.231s] Installing demo_composition script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/lib/ros2_demo_composition
+[1.231s] 
+[1.231s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_composition
+[1.232s] running install_data
+[1.267s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_composition' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_composition/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_composition

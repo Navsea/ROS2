@@ -1,0 +1,3 @@
+[console_scripts]
+sf_vinerow = sf_vinerow.sf_vinerow:main
+

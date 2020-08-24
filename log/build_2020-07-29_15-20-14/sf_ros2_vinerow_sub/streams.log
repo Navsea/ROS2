@@ -1,0 +1,24 @@
+[0.456s] Invoking command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub
+[0.836s] running develop
+[1.047s] running egg_info
+[1.047s] creating sf_ros2_vinerow_sub.egg-info
+[1.048s] writing sf_ros2_vinerow_sub.egg-info/PKG-INFO
+[1.049s] writing dependency_links to sf_ros2_vinerow_sub.egg-info/dependency_links.txt
+[1.050s] writing entry points to sf_ros2_vinerow_sub.egg-info/entry_points.txt
+[1.050s] writing requirements to sf_ros2_vinerow_sub.egg-info/requires.txt
+[1.050s] writing top-level names to sf_ros2_vinerow_sub.egg-info/top_level.txt
+[1.051s] writing manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+[1.094s] reading manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+[1.095s] writing manifest file 'sf_ros2_vinerow_sub.egg-info/SOURCES.txt'
+[1.098s] running build_ext
+[1.098s] Creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages/sf-ros2-vinerow-sub.egg-link (link to .)
+[1.104s] Installing sf_ros2_vinerow_sub script to /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/sf_ros2_vinerow_sub
+[1.105s] 
+[1.105s] Installed /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub
+[1.105s] running install_data
+[1.106s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/ament_index
+[1.106s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/ament_index/resource_index
+[1.106s] creating /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/ament_index/resource_index/packages
+[1.107s] copying resource/sf_ros2_vinerow_sub -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/ament_index/resource_index/packages
+[1.107s] copying package.xml -> /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/share/sf_ros2_vinerow_sub
+[1.158s] Invoked command in '/home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub' returned '0': PYTHONPATH=/home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msgs/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/sensor_fusion_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_custommsg_pub:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_pub/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/sensor_fusion_msg_types/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_subscriber:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_subscriber/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/build/ros2_demo_publisher:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_publisher/lib/python3.6/site-packages:/home/kenneth/PycharmProjects/ros2_ws_fix/install/ros2_demo_custommsg_create/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --prefix /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub --editable --build-directory /home/kenneth/PycharmProjects/ros2_ws_fix/build/sf_ros2_vinerow_sub/build --no-deps install_data --install-dir /home/kenneth/PycharmProjects/ros2_ws_fix/install/sf_ros2_vinerow_sub
